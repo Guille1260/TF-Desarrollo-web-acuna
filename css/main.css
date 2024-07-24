@@ -9,7 +9,7 @@
 .seccion {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 70px auto 100px;
+  grid-template-rows: 70px auto auto;
   grid-template-areas: "encabezado" "contenido" "pie";
 }
 .seccion .conteiner-header {
@@ -212,6 +212,87 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+}
+
+.conteiner-footer-principal {
+  z-index: 10;
+  border: white 1px solid;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: auto 40px;
+  grid-template-areas: "navegacion" "descrip";
+}
+.conteiner-footer-principal .nav-footer {
+  margin-left: 40px;
+  grid-area: navegacion;
+  border: white 1px solid;
+  grid-template-columns: 100%;
+  grid-template-columns: auto 40px;
+  grid-template-areas: "cont-links" "redesx";
+}
+.conteiner-footer-principal .nav-footer .conteiner-links-footer {
+  grid-area: cont-links;
+  border: white 1px solid;
+}
+.conteiner-footer-principal .nav-footer .conteiner-links-footer figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+.conteiner-footer-principal .nav-footer .conteiner-links-footer img {
+  height: 100px;
+  width: 100px;
+}
+.conteiner-footer-principal .nav-footer .conteiner-links-footer h3 {
+  border: white 1px solid;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.059em;
+  padding-bottom: 10px;
+}
+.conteiner-footer-principal .nav-footer .conteiner-links-footer .menu-footer {
+  border: white 1px solid;
+  text-align: center;
+  color: white;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+.conteiner-footer-principal .nav-footer .conteiner-redes-footer {
+  grid-area: redesx;
+  display: block;
+  color: white;
+  text-align: center;
+  align-content: center;
+}
+.conteiner-footer-principal .nav-footer .conteiner-redes-footer h4 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.059em;
+  padding-bottom: 10px;
+}
+.conteiner-footer-principal .nav-footer .conteiner-redes-footer .redes {
+  text-decoration: none;
+  margin-left: 10px;
+}
+.conteiner-footer-principal .nav-footer .conteiner-redes-footer .redes i {
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.conteiner-footer-principal .nav-footer .conteiner-redes-footer .redes i:hover {
+  color: green;
+}
+.conteiner-footer-principal .info-footer {
+  grid-area: descrip;
+  text-align: center;
+  border: white 1px solid;
+  margin-left: 40px;
 }
 
 .principal {

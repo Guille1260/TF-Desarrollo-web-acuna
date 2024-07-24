@@ -1,0 +1,68 @@
+.conteiner-footer-principal
+    z-index: 10
+    border: white 1px solid
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-columns: auto 40px
+    grid-template-areas: "navegacion" "descrip"
+    .nav-footer
+        margin-left: 40px
+        grid-area: navegacion
+        border: white 1px solid
+        grid-template-columns: 100%
+        grid-template-columns: auto 40px
+        grid-template-areas: "cont-links" "redesx"
+        .conteiner-links-footer
+            grid-area: cont-links
+            border: white 1px solid
+            figure
+                width: 100%
+                height: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                object-fit: cover
+            img
+                height: 100px
+                width: 100px
+            h3
+                border: white 1px solid
+                text-align: center
+                color: white
+                text-transform: uppercase
+                letter-spacing: 0.059em
+                padding-bottom: 10px
+            .menu-footer
+                border: white 1px solid
+                text-align: center
+                color: white
+                list-style: none
+                display: flex
+                flex-direction: column
+                padding-left: 0
+        .conteiner-redes-footer
+            grid-area: redesx
+            display: block
+            color: white
+            text-align: center
+            align-content: center
+            h4
+                color: white
+                text-transform: uppercase
+                letter-spacing: 0.059em
+                padding-bottom: 10px
+            .redes
+                text-decoration: none
+                margin-left: 10px
+                i
+                    color: white
+                    font-size: 20px
+                    margin-right: 20px 
+                    &:hover
+                        color: green
+    .info-footer
+        grid-area: descrip
+        text-align: center
+        border: white 1px solid
+        margin-left: 40px
+
