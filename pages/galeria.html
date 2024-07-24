@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria</title>
+  <!-- link de boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- link css -->
+  <link rel="stylesheet" href="../css/main.css" />
+  <!-- links iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- links animaciones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <section class="seccion">
+    <header
+        class="conteiner-header navbar fixed-top container-fluid" >
+        <section class="conteiner-logo-nombre">
+          <a
+            href=""
+            class="animate__bounceIn animate__lightSpeedInLeft"
+            title="ir a Home" >
+            <img src="./assets/images/Logo.png" alt="LOGO" class="logo" />
+          </a>
+          <h2 class="nombre animate__bounceIn animate__lightSpeedInLeft">
+            iker casillas
+          </h2>
+        </section>
+        <button
+          class="btn btn-menu"
+          title="abrir menu"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon" title="Abri Menu"></span>
+        </button>
+        <nav
+          class="conteiner-menu offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel" >
+          <section class="conteiner-nombre-logo-desplegado ">
+            <a href="../index.html" title="ir a Home">
+              <img src="../assets/images/Logo.png" alt="LOGO" class="logo-des" />
+            </a>
+
+            <h5 class="titulo-des" id="offcanvasNavbarLabel">MENU</h5>
+            <button
+              type="button"
+              data-bs-dismiss="offcanvas"
+              class="btn-close"
+              aria-label="Close" >
+            </button>
+          </section>
+          <section class="conteiner-cuerpo-menu">
+            <ul class="menu navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  href="../index.html"
+                  class="links-menu nav-link marca"
+                  aria-current="page" >
+                  <i class="fa-solid fa-house"> </i> Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./trayectoria.html" class="links-menu nav-link">
+                  <i class="fa-solid fa-route"></i>Trayectoria
+                </a>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn ">
+                  <i class="fa-solid fa-chart-line"></i>
+                  <a href="../index.html" class="links-menu ">
+                    Estadisticas
+                  </a>
+                </button>
+                <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="sub-menu dropdown-menu">
+                  <li>
+                    <a
+                      href="./estadisticas.html"
+                      class="links-sub-menu dropdown-item"
+                    >
+                      <i class="fa-solid fa-people-roof"></i> Clubes
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      href="./estadisticas.html"
+                      class="links-sub-menu dropdown-item"
+                    >
+                      <i class="fa-solid fa-font-awesome"></i> Seleccion
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn ">
+                  <i class="fa-solid fa-trophy"></i>
+                  <a href="./palmares.html" class="links-menu">
+                    Palmares
+                  </a>
+                </button>
+                <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="sub-menu dropdown-menu">
+                  <li>
+                    <a
+                      href="./palmares.html"
+                      class="links-sub-menu dropdown-item"
+                    >
+                      <i class="fa-solid fa-people-roof"></i> Clubes
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      href="./palmares.html"
+                      class="links-sub-menu dropdown-item"
+                    >
+                      <i class="fa-solid fa-font-awesome"></i> Seleccion
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      href="./palmares.html"
+                      class="links-sub-menu dropdown-item"
+                    >
+                      <i class="fa-solid fa-user"></i> Individuales
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn ">
+                  <i class="fa-solid fa-camera-retro"></i>
+                  <a href="./galeria.html" class="links-menu">
+                    Galeria
+                  </a>
+                </button>
+                <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="sub-menu dropdown-menu">
+                  <li>
+                    <a
+                      href="./galeria.html"
+                      class="links-sub-menu dropdown-item"
+                    >
+                      <i class="fa-solid fa-image"></i> Imagenes
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      href="./galeria.html"
+                      class="links-sub-menu dropdown-item"
+                    >
+                      <i class="fa-solid fa-video"></i> Videos
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn ">
+                  <i class="fa-solid fa-plus"></i>
+                  <a href="./formulario.html" class="links-menu">
+                    Mas
+                  </a>
+                </button>
+                <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                
+                <ul class="sub-menu dropdown-menu">
+                  <li>
+                    <a
+                      href="./formulario.html"
+                      class="links-sub-menu dropdown-item"
+                    >
+                      <i class="fa-solid fa-comments"></i> Formulario
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <footer class="conteiner-redes">
+              <a href="https://www.facebook.com/Iker.Casillas" class="redes">
+                <i class="fa-brands fa-facebook-f"> </i>
+              </a>
+              <a href="https://www.instagram.com/ikercasillas/" class="redes">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://x.com/IkerCasillas" class="redes">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </footer>
+          </section>
+        </nav>
+    </header>
+    <main class="principal" id="galeria">
+      <section class="conteiner-titulo-galeria">
+        <h1>
+          Galeria
+        </h1>
+      </section>
+
+      <section class="seccion-Imagenes" id="imagenes">
+        <article class="conteiner-subtitulo-galeria">
+          <h2 class="titulo-img">
+            Imagenes
+          </h2>
+        </article>
+
+        <section class="seccion-tarjetas">
+          <article class="tarjeta">
+            <div class="face font">
+              <img src="https://th.bing.com/th/id/R.6b52cd9bbbd7c6b84aa71e391c553b7b?rik=TZPkmiioLaRWyg&pid=ImgRaw&r=0"
+                alt="" class="image img-fluid">
+            </div>
+            <article class="face back">
+              <h3>Mundia 2010</h3>
+              <p>
+                Iker besado la copa lugeo de ser campeon del mundo
+              </p>
+            </article>
+          </article>
+          <article class="tarjeta">
+            <div class="face font">
+              <img
+                src="https://images.mediotiempo.com/UKbeNoTTI3O5Zcoa9EunC_UCvvM=/958x596/uploads/media/2020/05/11/iker-casillas-festejando-obtencion-mundial.jpg"
+                alt="" class="image">
+            </div>
+            <article class="face back">
+              <h3>Mundia 2010</h3>
+              <p>
+                Iker besado la copa lugeo de ser campeon del mundo
+              </p>
+            </article>
+          </article>
+          <article class="tarjeta">
+            <div class="face font">
+              <img src="https://pbs.twimg.com/media/D7ANCnlW0AA3kWw.jpg" alt="" class="image">
+            </div>
+            <article class="face back">
+              <h3>Mundia 2010</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque alias dolor in ea quaerat illum iure
+                voluptatem provident pariatur quis? Harum, explicabo? Facere culpa molestias cumque praesentium, numquam
+                maiores labore.
+              </p>
+            </article>
+          </article>
+          <article class="tarjeta">
+            <div class="face font">
+              <img src="https://th.bing.com/th/id/OIP.K2DGibq8vLaHd4nqF9H2twHaKO?rs=1&pid=ImgDetMain" alt=""
+                class="image">
+            </div>
+            <article class="face back">
+              <h3>Mundia 2010</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque alias dolor in ea quaerat illum iure
+                voluptatem provident pariatur quis? Harum, explicabo? Facere culpa molestias cumque praesentium, numquam
+                maiores labore.
+              </p>
+            </article>
+          </article>
+          <article class="tarjeta">
+            <div class="face font">
+              <img src="https://trescuatrotres.com/wp-content/uploads/2014/04/dt.common.streams.StreamServer-1.jpg"
+                alt="" class="image">
+            </div>
+            <article class="face back">
+              <h3>Mundia 2010</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque alias dolor in ea quaerat illum iure
+                voluptatem provident pariatur quis? Harum, explicabo? Facere culpa molestias cumque praesentium, numquam
+                maiores labore.
+              </p>
+            </article>
+          </article>
+          <article class="tarjeta">
+            <div class="face font">
+              <img
+                src="https://th.bing.com/th/id/R.a4f5792ead41aedb8cf85fe858caa7c4?rik=Dp7USuvwInOP4Q&riu=http%3a%2f%2fa.espncdn.com%2fphoto%2f2010%2f0827%2fespn_midyrzoom_21.jpg&ehk=fqkU%2bl3zEvd80bdJXltLBJ0qgiYUVPjgx4rTa3Vs8pc%3d&risl=&pid=ImgRaw&r=0"
+                alt="" class="image img-fluid">
+            </div>
+            <article class="face back">
+              <h3>Mundia 2010</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque alias dolor in ea quaerat illum iure
+                voluptatem provident pariatur quis? Harum, explicabo? Facere culpa molestias cumque praesentium, numquam
+                maiores labore.
+              </p>
+            </article>
+          </article>
+          <article class="tarjeta">
+            <div class="face font">
+              <img
+                src="https://i.pinimg.com/736x/b6/7b/e4/b67be458d130bf44901f2211252c20e0--fifa-world-cup-iker-casillas.jpg"
+                alt="" class="image">
+            </div>
+            <article class="face back">
+              <h3>Mundia 2010</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque alias dolor in ea quaerat illum iure
+                voluptatem provident pariatur quis? Harum, explicabo? Facere culpa molestias cumque praesentium, numquam
+                maiores labore.
+              </p>
+            </article>
+          </article>
+
+
+
+
+        </section>
+      </section>
+      <section class="seccion-videos" id="sec-videos">
+        <article class="conteiner-subtitulo-videos">
+          <h2 class="titulo-videos">
+            videos
+          </h2>
+        </article>
+        <section class="parte-videos">
+         <!-- iframe -->
+         <iframe width="100%" height="480px" src="https://www.youtube.com/embed/blpO8ySdgno" title="1 HORA DE MINUTAZOS PARA DISFRUTAR!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         <iframe width="100%" height="480px" src="https://www.youtube.com/embed/blpO8ySdgno" title="1 HORA DE MINUTAZOS PARA DISFRUTAR!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         <iframe width="100%" height="480px" src="https://www.youtube.com/embed/blpO8ySdgno" title="1 HORA DE MINUTAZOS PARA DISFRUTAR!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         <iframe width="100%" height="480px" src="https://www.youtube.com/embed/blpO8ySdgno" title="1 HORA DE MINUTAZOS PARA DISFRUTAR!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+      </section>
+    </main>
+    <footer class="conteiner-footer-principal">
+      <article>
+        <a href="https://www.facebook.com/Iker.Casillas" class="redes">
+          <i class="fa-brands fa-facebook-f"> </i>
+        </a>
+        <a href="https://www.instagram.com/ikercasillas/" class="redes">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://x.com/IkerCasillas" class="redes">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </article>
+      <article>
+          <p>trabajo final <a href="">ACUÑA GUILLERMO</a></p>
+      </article>
+    </footer>
+
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

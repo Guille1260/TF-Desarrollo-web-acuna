@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estadisticas</title>
+    <!-- link de boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- links iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- links animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  </head>
+  <body>
+    <section class="seccion">
+      <header
+        class="conteiner-header navbar fixed-top container-fluid">
+        <section class="conteiner-logo-nombre">
+          <a
+            href=""
+            class="animate__bounceIn animate__lightSpeedInLeft"
+            title="ir a Home" >
+            <img src="./assets/images/Logo.png" alt="LOGO" class="logo" />
+          </a>
+          <h2 class="nombre animate__bounceIn animate__lightSpeedInLeft">
+            iker casillas
+          </h2>
+        </section>
+        <button
+          class="btn btn-menu"
+          title="abrir menu"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon" title="Abri Menu"></span>
+        </button>
+        <nav
+          class="conteiner-menu offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel" >
+          <section class="conteiner-nombre-logo-desplegado ">
+            <a href="../index.html" title="ir a Home">
+              <img src="../assets/images/Logo.png" alt="LOGO" class="logo-des" />
+            </a>
+
+            <h5 class="titulo-des" id="offcanvasNavbarLabel">MENU</h5>
+            <button
+              type="button"
+              data-bs-dismiss="offcanvas"
+              class="btn-close"
+              aria-label="Close" >
+            </button>
+          </section>
+          <section class="conteiner-cuerpo-menu">
+            <ul class="menu navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  href="../index.html"
+                  class="links-menu nav-link marca"
+                  aria-current="page" >
+                  <i class="fa-solid fa-house"> </i> Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./trayectoria.html" class="links-menu nav-link">
+                  <i class="fa-solid fa-route"></i>Trayectoria
+                </a>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn ">
+                  <i class="fa-solid fa-chart-line"></i>
+                  <a href="../index.html" class="links-menu ">
+                    Estadisticas
+                  </a>
+                </button>
+                <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="sub-menu dropdown-menu">
+                  <li>
+                    <a
+                      href="./estadisticas.html"
+                      class="links-sub-menu dropdown-item"
+                    >
+                      <i class="fa-solid fa-people-roof"></i> Clubes
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      href="./estadisticas.html"
+                      class="links-sub-menu dropdown-item"
+                    >
+                      <i class="fa-solid fa-font-awesome"></i> Seleccion
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn ">
+                  <i class="fa-solid fa-trophy"></i>
+                  <a href="./palmares.html" class="links-menu">
+                    Palmares
+                  </a>
+                </button>
+                <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="sub-menu dropdown-menu">
+                  <li>
+                    <a
+                      href="./palmares.html"
+                      class="links-sub-menu dropdown-item"
+                    >
+                      <i class="fa-solid fa-people-roof"></i> Clubes
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      href="./palmares.html"
+                      class="links-sub-menu dropdown-item"
+                    >
+                      <i class="fa-solid fa-font-awesome"></i> Seleccion
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      href="./palmares.html"
+                      class="links-sub-menu dropdown-item"
+                    >
+                      <i class="fa-solid fa-user"></i> Individuales
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn ">
+                  <i class="fa-solid fa-camera-retro"></i>
+                  <a href="./galeria.html" class="links-menu">
+                    Galeria
+                  </a>
+                </button>
+                <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="sub-menu dropdown-menu">
+                  <li>
+                    <a
+                      href="./galeria.html"
+                      class="links-sub-menu dropdown-item"
+                    >
+                      <i class="fa-solid fa-image"></i> Imagenes
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      href="./galeria.html"
+                      class="links-sub-menu dropdown-item"
+                    >
+                      <i class="fa-solid fa-video"></i> Videos
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn ">
+                  <i class="fa-solid fa-plus"></i>
+                  <a href="./formulario.html" class="links-menu">
+                    Mas
+                  </a>
+                </button>
+                <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                
+                <ul class="sub-menu dropdown-menu">
+                  <li>
+                    <a
+                      href="./formulario.html"
+                      class="links-sub-menu dropdown-item"
+                    >
+                      <i class="fa-solid fa-comments"></i> Formulario
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <footer class="conteiner-redes">
+              <a href="https://www.facebook.com/Iker.Casillas" class="redes">
+                <i class="fa-brands fa-facebook-f"> </i>
+              </a>
+              <a href="https://www.instagram.com/ikercasillas/" class="redes">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://x.com/IkerCasillas" class="redes">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </footer>
+          </section>
+        </nav>
+      </header>
+      <main class="principal" id="estadisticas">
+        <section class="conteiner-titulo-sec">
+          <h1 class="titulo-seccion">Estadisticas</h1>
+        </section>
+
+        <section class="Nivel-club">
+          <section class="conteiner-sub-titulo">
+            <h2 class="sub-titulo" id="club">Club</h2>
+          </section>
+
+          <article class="conteiner-tabla table-responsive">
+            <table
+              class="tabla-club table table-bordered border-dark"
+              border="2"
+            >
+              <tr class="table-dark">
+                <!-- filas -->
+                <th rowspan="2">Club</th>
+                <th rowspan="2">Division</th>
+                <th rowspan="2">Temporada</th>
+                <th colspan="2">Liga</th>
+                <th colspan="2">Copas</th>
+                <th colspan="2">Internacional</th>
+                <th colspan="2">Total</th>
+              </tr>
+              <tr class="table-secondary">
+                <td>Partidos</td>
+                <td>Goles recibidos</td>
+                <td>Partidos</td>
+                <td>Goles recibidos</td>
+                <td>Partidos</td>
+                <td>Goles recibidos</td>
+                <td>Partidos</td>
+                <td>Goles recibidos</td>
+              </tr>
+              <tr>
+                <td class="table-dark">Real Madrid C. F. "C"</td>
+                <td class="table-info">3ª</td>
+                <td class="table-success">1998-99</td>
+                <td>3</td>
+                <td>2</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>3</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="2" class="table-dark">Real Madrid C. F. "B"</td>
+                <td rowspan="2" class="table-info">2ªB</td>
+                <td rowspan="2" class="table-success">1999-00</td>
+                <td>4</td>
+                <td>2</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>4</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>27</td>
+                <td>25</td>
+                <td>5</td>
+                <td>1</td>
+                <td>15</td>
+                <td>24</td>
+                <td>47</td>
+                <td>50</td>
+              </tr>
+
+              <tr>
+                <td rowspan="16" class="table-dark">Real Madrid</td>
+                <td rowspan="15" class="table-info">1ª</td>
+                <td class="table-success">2000-01</td>
+                <td>34</td>
+                <td>37</td>
+                <td>-</td>
+                <td>-</td>
+                <td>13</td>
+                <td>19</td>
+                <td>47</td>
+                <td>56</td>
+              </tr>
+              <tr>
+                <td class="table-success">2001-02</td>
+                <td>25</td>
+                <td>27</td>
+                <td>6</td>
+                <td>5</td>
+                <td>9</td>
+                <td>6</td>
+                <td>40</td>
+                <td>38</td>
+              </tr>
+              <tr>
+                <td class="table-success">2002-03</td>
+                <td>38</td>
+                <td>41</td>
+                <td>-</td>
+                <td>-</td>
+                <td>17</td>
+                <td>22</td>
+                <td>55</td>
+                <td>64</td>
+              </tr>
+              <tr>
+                <td class="table-success">2003-04</td>
+                <td>37</td>
+                <td>50</td>
+                <td>4</td>
+                <td>3</td>
+                <td>9</td>
+                <td>10</td>
+                <td>50</td>
+                <td>63</td>
+              </tr>
+              <tr>
+                <td class="table-success">2004-05</td>
+                <td>37</td>
+                <td>30</td>
+                <td>-</td>
+                <td>-</td>
+                <td>10</td>
+                <td>11</td>
+                <td>47</td>
+                <td>41</td>
+              </tr>
+              <tr>
+                <td class="table-success">2005-06</td>
+                <td>37</td>
+                <td>30</td>
+                <td>38</td>
+                <td>4</td>
+                <td>7</td>
+                <td>7</td>
+                <td>48</td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td class="table-success">2006-07</td>
+                <td>38</td>
+                <td>40</td>
+                <td>-</td>
+                <td>-</td>
+                <td>7</td>
+                <td>10</td>
+                <td>45</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td class="table-success">2007-08</td>
+                <td>36</td>
+                <td>32</td>
+                <td>2</td>
+                <td>6</td>
+                <td>8</td>
+                <td>13</td>
+                <td>46</td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td class="table-success">2008-09</td>
+                <td>38</td>
+                <td>52</td>
+                <td>2</td>
+                <td>5</td>
+                <td>7</td>
+                <td>10</td>
+                <td>47</td>
+                <td>67</td>
+              </tr>
+              <tr>
+                <td class="table-success">2009-10</td>
+                <td>38</td>
+                <td>35</td>
+                <td>-</td>
+                <td>-</td>
+                <td>8</td>
+                <td>9</td>
+                <td>46</td>
+                <td>44</td>
+              </tr>
+              <tr>
+                <td class="table-success">2010-11</td>
+                <td>35</td>
+                <td>32</td>
+                <td>8</td>
+                <td>2</td>
+                <td>11</td>
+                <td>6</td>
+                <td>54</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td class="table-success">2011-12</td>
+                <td>37</td>
+                <td>31</td>
+                <td>6</td>
+                <td>11</td>
+                <td>10</td>
+                <td>7</td>
+                <td>53</td>
+                <td>49</td>
+              </tr>
+              <tr>
+                <td class="table-success">2012-13</td>
+                <td>19</td>
+                <td>16</td>
+                <td>5</td>
+                <td>4</td>
+                <td>5</td>
+                <td>8</td>
+                <td>29</td>
+                <td>28</td>
+              </tr>
+              <tr>
+                <td class="table-success">2013-14</td>
+                <td>2</td>
+                <td>2</td>
+                <td>9</td>
+                <td>1</td>
+                <td>13</td>
+                <td>10</td>
+                <td>24</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td class="table-success">2014-15</td>
+                <td>32</td>
+                <td>35</td>
+                <td>2</td>
+                <td>2</td>
+                <td>13</td>
+                <td>7</td>
+                <td>47</td>
+                <td>46</td>
+              </tr>
+
+              <tr>
+                <td colspan="2" class="table-danger">Total Club</td>
+                <td>510</td>
+                <td>523</td>
+                <td>53</td>
+                <td>46</td>
+                <td>162</td>
+                <td>179</td>
+                <td>725</td>
+                <td>751</td>
+              </tr>
+              <tr>
+                <td rowspan="6" class="table-dark">Fútbol Club Oporto</td>
+                <td rowspan="5" class="table-info">1.ª</td>
+                <td class="table-success">2015-16</td>
+                <td>32</td>
+                <td>28</td>
+                <td>-</td>
+                <td>-</td>
+                <td>8</td>
+                <td>11</td>
+                <td>40</td>
+                <td>39</td>
+              </tr>
+              <tr>
+                <td class="table-success">2016-17</td>
+                <td>33</td>
+                <td>16</td>
+                <td>-</td>
+                <td>-</td>
+                <td>10</td>
+                <td>7</td>
+                <td>43</td>
+                <td>23</td>
+              </tr>
+              <tr>
+                <td class="table-success">2017-18</td>
+                <td>20</td>
+                <td>11</td>
+                <td>8</td>
+                <td>5</td>
+                <td>3</td>
+                <td>3</td>
+                <td>31</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <td class="table-success">2018-19</td>
+                <td>31</td>
+                <td>19</td>
+                <td>1</td>
+                <td>1</td>
+                <td>10</td>
+                <td>15</td>
+                <td>42</td>
+                <td>35</td>
+              </tr>
+              <tr>
+                <td class="table-success">2019-20</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="table-danger">total club</td>
+                <td>116</td>
+                <td>77</td>
+                <td>9</td>
+                <td>6</td>
+                <td>31</td>
+                <td>36</td>
+                <td>156</td>
+                <td>119</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="table-danger">total carrera</td>
+                <td>630</td>
+                <td>602</td>
+                <td>62</td>
+                <td>52</td>
+                <td>193</td>
+                <td>215</td>
+                <td>885</td>
+                <td>867</td>
+              </tr>
+            </table>
+          </article>
+        </section>
+
+        <section class="Nivel-seleccion">
+          <section class="conteiner-sub-titulo">
+            <h2 class="sub-titulo" id="seleccion">Seleccion</h2>
+          </section>
+          <article class="conteiner-tabla table-responsive">
+            <table
+              class="tabla-seleccion table table-bordered border-dark"
+              border="2"
+            >
+              <tr class="table-dark">
+                <th rowspan="2">Seleccion</th>
+                <th rowspan="2">temporada</th>
+                <th colspan="2">Europeo</th>
+                <th colspan="2">Mundial</th>
+                <th colspan="2">amistoso</th>
+                <th colspan="2">Total</th>
+                <th rowspan="2">Medeia goles</th>
+              </tr>
+              <tr class="table-secondary">
+                <td>Partidos</td>
+                <td>Goles</td>
+                <td>Partidos</td>
+                <td>Goles</td>
+                <td>Partidos</td>
+                <td>Goles</td>
+                <td>Partidos</td>
+                <td>Goles</td>
+              </tr>
+              <tr>
+                <td rowspan="2" class="table-dark">España sub-20</td>
+                <td class="table-success">1998-99</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>2</td>
+                <td>1,00</td>
+              </tr>
+              <tr>
+                <td class="table-warning">Total sub-20</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>2</td>
+                <td>1,00</td>
+              </tr>
+              <tr>
+                <td rowspan="2" class="table-dark">España sub-21</td>
+                <td class="table-success">1999-00</td>
+                <td>3</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>2</td>
+                <td>5</td>
+                <td>3</td>
+                <td>0,6</td>
+              </tr>
+              <tr>
+                <td class="table-warning">Total sub-21</td>
+                <td>3</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>2</td>
+                <td>5</td>
+                <td>3</td>
+                <td>0,6</td>
+              </tr>
+              <tr>
+                <td rowspan="17" class="table-dark">España absoluta</td>
+                <td class="table-success">1999-00</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0,5</td>
+              </tr>
+              <tr>
+                <td class="table-success">2000-01</td>
+                <td>0</td>
+                <td>0</td>
+                <td>4</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>7</td>
+                <td>6</td>
+                <td>0,85</td>
+              </tr>
+              <tr>
+                <td class="table-success">2001-02</td>
+                <td>0</td>
+                <td>0</td>
+                <td>6</td>
+                <td>5</td>
+                <td>3</td>
+                <td>1</td>
+                <td>9</td>
+                <td>6</td>
+                <td>0,67</td>
+              </tr>
+              <tr>
+                <td class="table-success">2002-03</td>
+                <td>6</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>4</td>
+                <td>1</td>
+                <td>10</td>
+                <td>4</td>
+                <td>0,4</td>
+              </tr>
+              <tr>
+                <td class="table-success">2003-04</td>
+                <td>7</td>
+                <td>4</td>
+                <td>0</td>
+                <td>0</td>
+                <td>5</td>
+                <td>2</td>
+                <td>12</td>
+                <td>6</td>
+                <td>0,5</td>
+              </tr>
+              <tr>
+                <td class="table-success">2004-05</td>
+                <td>0</td>
+                <td>0</td>
+                <td>7</td>
+                <td>2</td>
+                <td>3</td>
+                <td>1</td>
+                <td>10</td>
+                <td>3</td>
+                <td>0,3</td>
+              </tr>
+              <tr>
+                <td class="table-success">2005-06</td>
+                <td>0</td>
+                <td>0</td>
+                <td>8</td>
+                <td>7</td>
+                <td>3</td>
+                <td>2</td>
+                <td>11</td>
+                <td>9</td>
+                <td>0,82</td>
+              </tr>
+              <tr>
+                <td class="table-success">2006-07</td>
+                <td>6</td>
+                <td>6</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+                <td>8</td>
+                <td>7</td>
+                <td>0,88</td>
+              </tr>
+              <tr>
+                <td class="table-success">2007-08</td>
+                <td>9</td>
+                <td>4</td>
+                <td>0</td>
+                <td>0</td>
+                <td>4</td>
+                <td>1</td>
+                <td>13</td>
+                <td>5</td>
+                <td>0,38</td>
+              </tr>
+              <tr>
+                <td class="table-success">2008-09</td>
+                <td>0</td>
+                <td>0</td>
+                <td>10</td>
+                <td>6</td>
+                <td>4</td>
+                <td>0</td>
+                <td>14</td>
+                <td>6</td>
+                <td>0,43</td>
+              </tr>
+              <tr>
+                <td class="table-success">2009-10</td>
+                <td>0</td>
+                <td>0</td>
+                <td>10</td>
+                <td>4</td>
+                <td>5</td>
+                <td>4</td>
+                <td>15</td>
+                <td>8</td>
+                <td>0,53</td>
+              </tr>
+              <tr>
+                <td class="table-success">2010-11</td>
+                <td>5</td>
+                <td>5</td>
+                <td>0</td>
+                <td>0</td>
+                <td>5</td>
+                <td>5</td>
+                <td>10</td>
+                <td>10</td>
+                <td>1,00</td>
+              </tr>
+              <tr>
+                <td class="table-success">2011-12</td>
+                <td>8</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>8</td>
+                <td>5</td>
+                <td>16</td>
+                <td>6</td>
+                <td>0,38</td>
+              </tr>
+              <tr>
+                <td class="table-success">2012-13</td>
+                <td>0</td>
+                <td>0</td>
+                <td>6</td>
+                <td>5</td>
+                <td>5</td>
+                <td>3</td>
+                <td>11</td>
+                <td>8</td>
+                <td>0,33</td>
+              </tr>
+              <tr>
+                <td class="table-success">2013-14</td>
+                <td>0</td>
+                <td>0</td>
+                <td>4</td>
+                <td>7</td>
+                <td>4</td>
+                <td>1</td>
+                <td>8</td>
+                <td>8</td>
+                <td>1,00</td>
+              </tr>
+              <tr>
+                <td class="table-success">2014-15</td>
+                <td>5</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>6</td>
+                <td>4</td>
+                <td>0,66</td>
+              </tr>
+              <tr>
+                <td class="table-success">2015-16</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+                <td>1</td>
+                <td>5</td>
+                <td>1</td>
+                <td>0,2</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="table-warning">Total absoluta</td>
+                <td>48</td>
+                <td>26</td>
+                <td>55</td>
+                <td>38</td>
+                <td>64</td>
+                <td>34</td>
+                <td>167</td>
+                <td>98</td>
+                <td>0,59</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="table-warning">Total carrera</td>
+                <td>51</td>
+                <td>27</td>
+                <td>57</td>
+                <td>40</td>
+                <td>66</td>
+                <td>36</td>
+                <td>174</td>
+                <td>103</td>
+                <td>0,59</td>
+              </tr>
+            </table>
+          </article>
+          <details class="conteiner-detalle">
+            <summary>INFORMACION</summary>
+            <p>
+              se tuvieron en cuenta : <br />
+              (1) En el caso de la selección absoluta incluye también los
+              partidos de la Copa FIFA Confederaciones (2009-13). <br />
+              (2) Incluye los partidos de las fases de clasificación de Europeos
+              y Mundiales (1998-2013). <br />
+              (3) Media de goles recibidos. <br />
+              (4) Incluye datos de la Copa del Rey / Supercopa de España
+              (1999-13); Taça de Portugal / SuperTaça C. O. (2015-Act.) En caso
+              de equipo filial se refiere a fases de ascenso/descenso. <br />
+              (5) Incluye datos de la Copa Mundial de Clubes de la FIFA (2000);
+              Copa Intercontinental (2000-02); Supercopa de Europa (2000-02);
+              Liga de Campeones de la UEFA (1999-13). <br />
+              (6) Goles encajados. No se incluyen partidos amistosos.
+            </p>
+          </details>
+        </section>
+      </main>
+    </section>
+    <footer class="conteiner-footer-principal">
+      <article>
+        <a href="https://www.facebook.com/Iker.Casillas" class="redes">
+          <i class="fa-brands fa-facebook-f"> </i>
+        </a>
+        <a href="https://www.instagram.com/ikercasillas/" class="redes">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://x.com/IkerCasillas" class="redes">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </article>
+      <article>
+          <p>trabajo final <a href="">ACUÑA GUILLERMO</a></p>
+      </article>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
