@@ -1,0 +1,30 @@
+#formulario-page
+    display: grid
+    row-gap: 20px
+    grid-template-columns: 1fr
+    grid-template-rows: auto auto 
+    grid-template-areas: "introduccion" "contenido-formulario" 
+    .conteiner-descripcion-formulario
+        grid-area: introduccion
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: auto auto 
+        grid-template-areas: "tituloxx" "intro"
+        .conteiner-titulo-des
+            grid-area: tituloxx
+            h1
+                text-align: center
+        .formu-des
+            grid-area: intro
+            p
+                text-align: center
+                margin: 5px 
+    .conteiner-formulario
+        grid-area: contenido-formulario
+        text-align: center
+        .formulario
+            display: grid
+            grid-template-columns: 1fr
+            grid-template-rows: repeat(5,auto)
+            row-gap: 20px
+            

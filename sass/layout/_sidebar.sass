@@ -1,0 +1,24 @@
+// Menu desplegable que se oculta a la derecha
+.conteiner-menu
+    @include bg-difum
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37)
+    //contenedor del logo
+    .conteiner-nombre-logo-desplegado
+        height: 100px
+        width: 100%
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border: 1px solid black
+        .logo-des 
+            @include tam-logo
+            &:hover
+                opacity: 0.8
+        .titulo-des
+            font-size: 35px
+            text-transform: uppercase
+            align-items: center
+            font-family: $tiitulo-header
+            font-weight: $tiitulo-header-weight
+            font-style: $tiitulo-header-stylo
+            

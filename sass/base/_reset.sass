@@ -1,0 +1,29 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+// divido en secciones todas las paginas, todas tienen el mismo formato/stilo
+.seccion
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 70px auto 100px
+    grid-template-areas: "encabezado" "contenido" "pie"
+    .conteiner-header
+        grid-area: encabezado
+    .principal
+        grid-area: contenido
+    .conteiner-footer-principal
+        grid-area: pie
+        background: black
+// divido en 3 el menu desplegable
+.conteiner-menu
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 100px auto 40px
+    grid-template-areas: "encabezado-des" "contenido-des" "pie-des"
+    .conteiner-nombre-logo-desplegado
+        grid-area: encabezado-des
+    .conteiner-cuerpo-menu
+        grid-area: contenido-des
+    .conteiner-redes
+        grid-area: pie-des   

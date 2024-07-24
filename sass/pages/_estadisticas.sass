@@ -1,0 +1,15 @@
+#estadisticas
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 70px auto auto 
+    grid-template-areas: "titulo-estadistica" "contenido-1-estadistica" "contenido-2-estadistica"
+    .conteiner-titulo-sec
+        grid-area: titulo-estadistica
+        width: 100%
+    .Nivel-club
+        grid-area: contenido-1-estadistica
+        @include niveles-estadistica
+
+    .Nivel-seleccion
+        grid-area: contenido-2-estadistica
+        @include niveles-estadistica

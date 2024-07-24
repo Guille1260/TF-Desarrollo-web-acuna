@@ -1,0 +1,18 @@
+#home-fondo
+    //fondo de la seccion home
+    height: 100vh
+    background-image: url("../assets/images/fondo-home.jpg")
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    background-attachment: fixed
+    //oscurecer el fondo
+    &::before
+        content: ""
+        position: fixed
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background-color: rgba(0, 0, 0, 0.4)
+ 

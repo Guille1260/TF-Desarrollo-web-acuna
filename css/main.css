@@ -1,0 +1,576 @@
+@import 'https://fonts.googleapis.com/css2?family=Anton+SC&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Anton+SC&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.seccion {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px auto 100px;
+  grid-template-areas: "encabezado" "contenido" "pie";
+}
+.seccion .conteiner-header {
+  grid-area: encabezado;
+}
+.seccion .principal {
+  grid-area: contenido;
+}
+.seccion .conteiner-footer-principal {
+  grid-area: pie;
+  background: black;
+}
+
+.conteiner-menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px auto 40px;
+  grid-template-areas: "encabezado-des" "contenido-des" "pie-des";
+}
+.conteiner-menu .conteiner-nombre-logo-desplegado {
+  grid-area: encabezado-des;
+}
+.conteiner-menu .conteiner-cuerpo-menu {
+  grid-area: contenido-des;
+}
+.conteiner-menu .conteiner-redes {
+  grid-area: pie-des;
+}
+
+.btn-menu {
+  background: #DBF227;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.btn-menu:hover {
+  background: #DBF227;
+  opacity: 0.5;
+}
+
+.btn-enviar {
+  background: black;
+  color: #dbf227;
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+}
+
+#home-fondo {
+  height: 100vh;
+  background-image: url("../assets/images/fondo-home.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#home-fondo::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.conteiner-header .conteiner-logo-nombre {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-left: 5%;
+}
+.conteiner-header .conteiner-logo-nombre .logo {
+  height: 60px;
+  width: 60px;
+  align-items: center;
+}
+.conteiner-header .conteiner-logo-nombre .logo:hover {
+  opacity: 0.8;
+}
+.conteiner-header .conteiner-logo-nombre .nombre {
+  display: none;
+}
+
+.conteiner-menu {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 225, 225, 0));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.conteiner-menu .conteiner-nombre-logo-desplegado {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+}
+.conteiner-menu .conteiner-nombre-logo-desplegado .logo-des {
+  height: 60px;
+  width: 60px;
+  align-items: center;
+}
+.conteiner-menu .conteiner-nombre-logo-desplegado .logo-des:hover {
+  opacity: 0.8;
+}
+.conteiner-menu .conteiner-nombre-logo-desplegado .titulo-des {
+  font-size: 35px;
+  text-transform: uppercase;
+  align-items: center;
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.conteiner-cuerpo-menu {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.conteiner-cuerpo-menu .menu {
+  text-align: center;
+  width: 100%;
+}
+
+.conteiner-tarjeta {
+  border: 1px solid black;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 50px auto;
+  grid-template-areas: "titu-tarjeta" "cuerpo-tarjeta";
+}
+.conteiner-tarjeta .conteiner-titulo-tarjeta {
+  grid-area: titu-tarjeta;
+  border: 1px solid black;
+}
+.conteiner-tarjeta .conteiner-image-info {
+  border: 1px solid black;
+  grid-area: cuerpo-tarjeta;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas: "imagen descri";
+}
+.conteiner-tarjeta .conteiner-image-info .conteiner-img-tarjeta {
+  grid-area: imagen;
+  text-align: center;
+  align-content: center;
+  border: 1px solid black;
+}
+.conteiner-tarjeta .conteiner-image-info .conteiner-img-tarjeta .copa {
+  width: 100px;
+  height: 100px;
+}
+.conteiner-tarjeta .conteiner-image-info .info-copa {
+  grid-area: descri;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+}
+
+.tarjeta {
+  width: 100%;
+  height: 500px;
+  margin-top: 15px;
+  position: relative;
+}
+.tarjeta img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.tarjeta .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: 0.5s;
+  border: 10px solid #DBF227;
+}
+.tarjeta:hover .font {
+  transform: perspective(600px) rotateY(180deg);
+}
+.tarjeta:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+.tarjeta .font {
+  transform: perspective(600px) rotateX(0deg);
+  box-shadow: 0px 5px 10px #000;
+}
+.tarjeta .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(3, 35, 34);
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.principal {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 170px auto;
+  grid-template-areas: "titulo-home" "contenido-home";
+}
+.principal .conteiner-titulo-seccion {
+  grid-area: titulo-home;
+  text-align: center;
+  align-content: center;
+  z-index: 111;
+  border: 1px solid black;
+}
+.principal .conteiner-titulo-seccion .titulo {
+  color: #DBF227;
+  border: 1px solid black;
+}
+.principal .conteiner-descripcion {
+  grid-area: contenido-home;
+  border: 1px solid black;
+  z-index: 111;
+}
+.principal .conteiner-descripcion .detalles {
+  margin: 10px;
+  margin-top: 60px;
+  color: white;
+  border: 1px solid black;
+}
+.principal .conteiner-descripcion .detalles strong {
+  color: #DBF227;
+}
+
+#trayectoria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px auto;
+  grid-template-areas: "titulo-trayectoria" "contenido-trayectoria";
+}
+#trayectoria .conteiner-titulo-tra {
+  grid-area: titulo-trayectoria;
+  background: black;
+}
+#trayectoria .conteiner-titulo-tra .titulo-trayectoria {
+  color: #DBF227;
+}
+#trayectoria .conteiner-trayectoria-info {
+  grid-area: contenido-trayectoria;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "uno" "dos" "tres";
+}
+#trayectoria .conteiner-trayectoria-info .conteiner-detalles1 {
+  grid-area: uno;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "imag" "descri";
+}
+#trayectoria .conteiner-trayectoria-info .conteiner-detalles1 .conteiner-escudo {
+  grid-area: imag;
+  text-align: center;
+  border: 1px solid black;
+}
+#trayectoria .conteiner-trayectoria-info .conteiner-detalles1 .detalle {
+  grid-area: descri;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px auto;
+  grid-template-areas: "sub-tit" "det-p";
+}
+#trayectoria .conteiner-trayectoria-info .conteiner-detalles1 .detalle .conteiner-titulo-det {
+  grid-area: sub-tit;
+  background: black;
+  border: 1px solid black;
+  text-align: center;
+}
+#trayectoria .conteiner-trayectoria-info .conteiner-detalles1 .detalle .detalle-parrafo {
+  grid-area: det-p;
+  border: 1px solid black;
+}
+#trayectoria .conteiner-trayectoria-info .conteiner-detalles2 {
+  grid-area: dos;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "imag" "descri";
+}
+#trayectoria .conteiner-trayectoria-info .conteiner-detalles2 .conteiner-escudo {
+  grid-area: imag;
+  text-align: center;
+  border: 1px solid black;
+}
+#trayectoria .conteiner-trayectoria-info .conteiner-detalles2 .detalle {
+  grid-area: descri;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px auto;
+  grid-template-areas: "sub-tit" "det-p";
+}
+#trayectoria .conteiner-trayectoria-info .conteiner-detalles2 .detalle .conteiner-titulo-det {
+  grid-area: sub-tit;
+  background: black;
+  border: 1px solid black;
+  text-align: center;
+}
+#trayectoria .conteiner-trayectoria-info .conteiner-detalles2 .detalle .detalle-parrafo {
+  grid-area: det-p;
+  border: 1px solid black;
+}
+#trayectoria .conteiner-trayectoria-info .conteiner-detalles3 {
+  grid-area: tres;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "imag" "descri";
+}
+#trayectoria .conteiner-trayectoria-info .conteiner-detalles3 .conteiner-escudo {
+  grid-area: imag;
+  text-align: center;
+  border: 1px solid black;
+}
+#trayectoria .conteiner-trayectoria-info .conteiner-detalles3 .detalle {
+  grid-area: descri;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px auto;
+  grid-template-areas: "sub-tit" "det-p";
+}
+#trayectoria .conteiner-trayectoria-info .conteiner-detalles3 .detalle .conteiner-titulo-det {
+  grid-area: sub-tit;
+  background: black;
+  border: 1px solid black;
+  text-align: center;
+}
+#trayectoria .conteiner-trayectoria-info .conteiner-detalles3 .detalle .detalle-parrafo {
+  grid-area: det-p;
+  border: 1px solid black;
+}
+#trayectoria .conteiner-trayectoria-info .escudo {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+#trayectoria .conteiner-trayectoria-info .detalle-parrafo {
+  margin: 10px;
+}
+
+#estadisticas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px auto auto;
+  grid-template-areas: "titulo-estadistica" "contenido-1-estadistica" "contenido-2-estadistica";
+}
+#estadisticas .conteiner-titulo-sec {
+  grid-area: titulo-estadistica;
+  width: 100%;
+}
+#estadisticas .Nivel-club {
+  grid-area: contenido-1-estadistica;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px auto;
+  grid-template-areas: "tit-niv" "tab";
+}
+#estadisticas .Nivel-club .conteiner-sub-titulo {
+  grid-area: tit-niv;
+}
+#estadisticas .Nivel-club .conteiner-tabla {
+  grid-area: tab;
+}
+#estadisticas .Nivel-seleccion {
+  grid-area: contenido-2-estadistica;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px auto;
+  grid-template-areas: "tit-niv" "tab";
+}
+#estadisticas .Nivel-seleccion .conteiner-sub-titulo {
+  grid-area: tit-niv;
+}
+#estadisticas .Nivel-seleccion .conteiner-tabla {
+  grid-area: tab;
+}
+
+#palmares {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px auto;
+  grid-template-areas: "titulo-palmares" "contenido-1-palmares" "contenido-2-palmares" "contenido-3-palmares";
+}
+#palmares .conteiner-titulo-pal {
+  grid-area: titulo-palmares;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px auto;
+  grid-template-areas: "sub-titulo-sec" "contemidox";
+}
+#palmares .conteiner-titulo-pal .conteiner-sub-titulo-pal {
+  grid-area: sub-titulo-sec;
+  background: #063540;
+}
+#palmares .conteiner-titulo-pal .conteiner-sec {
+  grid-area: contemidox;
+  background: olive;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+#palmares .seccion-Nivel-1 {
+  grid-area: contenido-1-palmares;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px auto;
+  grid-template-areas: "sub-titulo-sec" "contemidox";
+}
+#palmares .seccion-Nivel-1 .conteiner-sub-titulo-pal {
+  grid-area: sub-titulo-sec;
+  background: #063540;
+}
+#palmares .seccion-Nivel-1 .conteiner-sec {
+  grid-area: contemidox;
+  background: olive;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+#palmares .seccion-Nivel-2 {
+  grid-area: contenido-2-palmares;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px auto;
+  grid-template-areas: "sub-titulo-sec" "contemidox";
+}
+#palmares .seccion-Nivel-2 .conteiner-sub-titulo-pal {
+  grid-area: sub-titulo-sec;
+  background: #063540;
+}
+#palmares .seccion-Nivel-2 .conteiner-sec {
+  grid-area: contemidox;
+  background: olive;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+#palmares .seccion-Nivel-3 {
+  grid-area: contenido-3-palmares;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px auto;
+  grid-template-areas: "sub-titulo-sec" "contemidox";
+}
+#palmares .seccion-Nivel-3 .conteiner-sub-titulo-pal {
+  grid-area: sub-titulo-sec;
+  background: #063540;
+}
+#palmares .seccion-Nivel-3 .conteiner-sec {
+  grid-area: contemidox;
+  background: olive;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+#galeria {
+  display: grid;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px auto auto;
+  grid-template-areas: "titulo-galeria" "contenido-1-galeria" "contenido-2-galeria";
+}
+#galeria .conteiner-titulo-galeria {
+  grid-area: titulo-galeria;
+}
+#galeria .seccion-Imagenesnes {
+  grid-area: contenido-1-galeria;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px auto;
+  grid-template-areas: "t" "s";
+}
+#galeria .seccion-Imagenesnes .conteiner-subtitulo-galeria {
+  grid-area: t;
+}
+#galeria .seccion-Imagenesnes .seccion-tarjetas {
+  grid-area: s;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+#galeria .seccion-videos {
+  grid-area: contenido-2-galeria;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px auto;
+  grid-template-areas: "te" "se";
+}
+#galeria .seccion-videos .conteiner-subtitulo-videos {
+  grid-area: te;
+  background: #063540;
+}
+#galeria .seccion-videos .conteiner-subtitulo-videos .titulo-video {
+  font-size: 50px;
+}
+#galeria .seccion-videos .parte-videos {
+  grid-area: se;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+#formulario-page {
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "introduccion" "contenido-formulario";
+}
+#formulario-page .conteiner-descripcion-formulario {
+  grid-area: introduccion;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "tituloxx" "intro";
+}
+#formulario-page .conteiner-descripcion-formulario .conteiner-titulo-des {
+  grid-area: tituloxx;
+}
+#formulario-page .conteiner-descripcion-formulario .conteiner-titulo-des h1 {
+  text-align: center;
+}
+#formulario-page .conteiner-descripcion-formulario .formu-des {
+  grid-area: intro;
+}
+#formulario-page .conteiner-descripcion-formulario .formu-des p {
+  text-align: center;
+  margin: 5px;
+}
+#formulario-page .conteiner-formulario {
+  grid-area: contenido-formulario;
+  text-align: center;
+}
+#formulario-page .conteiner-formulario .formulario {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  row-gap: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

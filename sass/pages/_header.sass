@@ -1,0 +1,32 @@
+.principal
+    //divido la seccion principal en 2 
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 170px auto 
+    grid-template-areas: "titulo-home" "contenido-home"
+    //contenedor del Titulo, titulo centrado
+    .conteiner-titulo-seccion
+        grid-area: titulo-home
+        text-align: center
+        align-content: center
+        z-index: 111
+        border: 1px solid black
+        //titulo
+        .titulo
+            color: $color-amarillo
+            border: 1px solid black
+            
+    //Descripcion
+    .conteiner-descripcion
+        grid-area: contenido-home
+        border: 1px solid black
+        z-index: 111
+        //detalles
+        .detalles
+            margin: 10px
+            margin-top: 60px
+            color: #ffff
+            border: 1px solid black
+            strong
+                color: $color-amarillo
+

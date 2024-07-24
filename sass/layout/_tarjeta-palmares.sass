@@ -1,0 +1,33 @@
+//tarjetas palmares
+.conteiner-tarjeta
+    border: 1px solid black
+    margin:  5px
+    display: grid
+    grid-template-columns: 1fr
+    grid-auto-rows: 50px auto
+    grid-template-areas: "titu-tarjeta" "cuerpo-tarjeta"
+    .conteiner-titulo-tarjeta
+        grid-area: titu-tarjeta
+        border: 1px solid black
+    .conteiner-image-info
+        border: 1px solid black
+        grid-area: cuerpo-tarjeta
+        display: grid
+        grid-template-columns: 100px 1fr
+        grid-auto-rows:  auto
+        grid-template-areas: "imagen descri"
+        .conteiner-img-tarjeta
+            grid-area: imagen
+            text-align: center
+            align-content: center
+            border: 1px solid black
+            .copa
+                width: 100px
+                height: 100px
+        .info-copa
+            grid-area: descri 
+            width: 100%
+            height: 100%
+            text-align: center
+            align-content: center
+           

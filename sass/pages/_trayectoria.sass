@@ -1,0 +1,36 @@
+#trayectoria
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 70px auto 
+    grid-template-areas: "titulo-trayectoria" "contenido-trayectoria"
+    .conteiner-titulo-tra
+        grid-area: titulo-trayectoria
+        background: black
+        .titulo-trayectoria
+            color: $color-amarillo
+
+    .conteiner-trayectoria-info
+        grid-area: contenido-trayectoria 
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(3,auto)
+        grid-template-areas: "uno" "dos" "tres"
+        .conteiner-detalles1
+            grid-area: uno     
+            @include detatlles-trayectoria
+
+        .conteiner-detalles2
+            grid-area: dos
+            @include detatlles-trayectoria
+
+        .conteiner-detalles3
+            grid-area: tres
+            @include detatlles-trayectoria
+        //tamaño de los escudos
+        .escudo
+            height: 200px
+            width: 200px
+            object-fit: cover
+            object-position: center
+        .detalle-parrafo
+            margin: 10px
