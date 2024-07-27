@@ -5,10 +5,15 @@
     align-items: center
 //difuminado de la sidebar
 @mixin bg-difum
-    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,225,225,0))
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 225, 225, 0))
     backdrop-filter: blur(20px)
     -webkit-backdrop-filter: blur(20px)
 
+@mixin titulos
+    text-align: center
+    align-content: center
+    
+    
 //page trayectoria  
 //divide la seccion de detalles
 @mixin informacion-trayectoria
@@ -19,26 +24,35 @@
     //titulo del equipo
     .conteiner-titulo-det
         grid-area: sub-tit
-        background: black
+        background: #D6D58E
         border: 1px solid black
         text-align: center
+        color: #242912b6
     //descripcion
     .detalle-parrafo
         grid-area: det-p 
-        border: 1px solid black
+        
 //divide las 2 partes de escudo y su detalle
 @mixin detatlles-trayectoria
     display: grid
     grid-template-columns:  auto auto 
     grid-template-rows: auto auto
     grid-template-areas: "imag" "descri"
+    @media screen and ( min-width:768px ) 
+        grid-template-columns:  1/2fr 1fr  
+        grid-template-rows: auto 
+        grid-template-areas: "imag descri"
+
     .conteiner-escudo
         grid-area: imag
+        background: #042940
         text-align: center
+        align-content: center
         border: 1px solid black
     .detalle
         grid-area: descri
         border: 1px solid black
+        background: #A3AB78
         @include informacion-trayectoria
 
 
@@ -51,6 +65,8 @@
     grid-template-areas:"tit-niv" "tab" 
     .conteiner-sub-titulo
         grid-area: tit-niv
+        background: #10454F
+        @include titulos
     .conteiner-tabla
         grid-area: tab
 //page palmares
@@ -60,24 +76,55 @@
     grid-template-columns: 1fr
     grid-template-rows:  auto
     grid-gap: 10px
+    @media screen and ( min-width:600px )
+        grid-template-columns: 1fr 1fr
+    @media screen and ( min-width:1024px )
+        grid-template-columns: 1fr 1fr 1fr
+    @media screen and ( min-width: 2560px ) 
+        grid-template-columns: repeat(4,1fr)
 @mixin palmares-secciones
     display: grid
     grid-template-columns: 1fr
     grid-template-rows: 70px auto
     grid-template-areas: "sub-titulo-sec"  "contemidox"
+    
     .conteiner-sub-titulo-pal
         grid-area: sub-titulo-sec
         background: #063540
+        @include titulos
     .conteiner-sec
         grid-area: contemidox
-        background: olive
+        background: #9FC131
         @include  section-tarjetas-palmares
     
 //page galeria
-@mixin section-img
+//imanes
+@mixin imagenes
     display: grid
     grid-template-columns: 1fr
-    grid-template-rows: auto
+    grid-template-rows:  auto
     grid-gap: 10px
+    @media screen and (min-width:768px)
+        grid-template-columns: 1fr 1fr
+    @media screen and (min-width:1024px)
+        grid-template-columns: repeat(3,1fr)
+    @media screen and (min-width:2500px)
+        grid-template-columns: repeat(2,1fr)
+    
+
+//seccion de imagenes y titulos
+@mixin galeria-seccion
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 70px auto
+    grid-template-areas: "t" "s"
+    .conteiner-subtitulo-galeria
+        grid-area: t
+        background: #10454F
+        @include titulos
+    .seccion-tarjetas
+        grid-area: s
+        @include imagenes
+        
      
     

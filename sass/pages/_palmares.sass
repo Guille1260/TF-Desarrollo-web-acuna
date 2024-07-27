@@ -5,7 +5,8 @@
     grid-template-areas: "titulo-palmares" "contenido-1-palmares" "contenido-2-palmares" "contenido-3-palmares"
     .conteiner-titulo-pal
         grid-area: titulo-palmares
-        @include palmares-secciones
+        background: $color-subtitulos
+        @include titulos
     .seccion-Nivel-1
         grid-area: contenido-1-palmares
         @include palmares-secciones
@@ -15,3 +16,8 @@
     .seccion-Nivel-3
         grid-area: contenido-3-palmares
         @include palmares-secciones
+    .conteiner-titulo-tarjeta
+        align-content: center
+        .titulo-tarjeta
+            text-align: center
+            font-size: 20px

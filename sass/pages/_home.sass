@@ -1,3 +1,4 @@
+
 .principal
     //divido la seccion principal en 2 
     display: grid
@@ -10,23 +11,32 @@
         text-align: center
         align-content: center
         z-index: 111
-        border: 1px solid black
         //titulo
-        .titulo
+        .titulo 
+            width: 80%
+            margin-left: 20px
             color: $color-amarillo
-            border: 1px solid black
-            
+            font-size: 30px
+            text-shadow: black 2px 2px
+            font-family: $titulo-home
+            @include animacion-home
+            text-transform: uppercase
+            // text-align: center
+            @media screen and (min-width: 768px)
+                width: 90%
+                font-size: 40px
+                margin-left: 40px
+                color: $color-amarillo
     //Descripcion
     .conteiner-descripcion
         grid-area: contenido-home
-        border: 1px solid black
         z-index: 111
         //detalles
         .detalles
+            font-size: 20px
             margin: 10px
-            margin-top: 60px
+            margin-top: 10px
             color: #ffff
-            border: 1px solid black
             strong
                 color: $color-amarillo
 

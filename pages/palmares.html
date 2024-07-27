@@ -29,21 +29,17 @@
   </head>
   <body>
     <section class="seccion">
-      <header
-        class="conteiner-header navbar fixed-top container-fluid">
+      <header class="conteiner-header navbar fixed-top container-fluid"  >
         <section class="conteiner-logo-nombre">
-          <a
-            href=""
-            class="animate__bounceIn animate__lightSpeedInLeft"
-            title="ir a Home" >
-            <img src="./assets/images/Logo.png" alt="LOGO" class="logo" />
+          <a href="" class="animate__bounceIn animate__lightSpeedInLeft" title="ir a Home" >
+            <img src="../assets/images/Logo.png" alt="LOGO" class="logo" />
           </a>
           <h2 class="nombre animate__bounceIn animate__lightSpeedInLeft">
             iker casillas
           </h2>
         </section>
         <button
-          class="btn btn-menu"
+          class="btn-menu btn"
           title="abrir menu"
           type="button"
           data-bs-toggle="offcanvas"
@@ -53,180 +49,219 @@
           <span class="navbar-toggler-icon" title="Abri Menu"></span>
         </button>
         <nav
-          class="conteiner-menu offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel" >
-          <section class="conteiner-nombre-logo-desplegado ">
-            <a href="../index.html" title="ir a Home">
-              <img src="../assets/images/Logo.png" alt="LOGO" class="logo-des" />
-            </a>
-
-            <h5 class="titulo-des" id="offcanvasNavbarLabel">MENU</h5>
-            <button
-              type="button"
-              data-bs-dismiss="offcanvas"
-              class="btn-close"
-              aria-label="Close" >
-            </button>
-          </section>
-          <section class="conteiner-cuerpo-menu">
-            <ul class="menu navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a
-                  href="../index.html"
-                  class="links-menu nav-link marca"
-                  aria-current="page" >
-                  <i class="fa-solid fa-house"> </i> Home
+              class="conteiner-menu offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <section class="conteiner-nombre-logo-desplegado offcanvas-header">
+                <a href="../index.html" title="ir a Home">
+                  <img
+                    src="../assets/images/Logo.png"
+                    alt="LOGO"
+                    class="logo-des"
+                  />
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="./trayectoria.html" class="links-menu nav-link">
-                  <i class="fa-solid fa-route"></i>Trayectoria
-                </a>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn ">
-                  <i class="fa-solid fa-chart-line"></i>
-                  <a href="../index.html" class="links-menu ">
-                    Estadisticas
-                  </a>
-                </button>
-                <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="sub-menu dropdown-menu">
-                  <li>
+    
+                <h5 class="titulo-des" id="offcanvasNavbarLabel">MENU</h5>
+                <button
+                  type="button"
+                  data-bs-dismiss="offcanvas"
+                  class="btn-close"
+                  aria-label="Close"
+                ></button>
+              </section>
+              <section class="conteiner-cuerpo-menu">
+                <ul class="menu navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a
+                      href="../index.html"
+                      class="links-menu nav-link marca"
+                      aria-current="page"
+                    >
+                      <i class="fa-solid fa-house"> </i> Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./trayectoria.html" class="links-menu nav-link">
+                      <i class="fa-solid fa-route"></i>Trayectoria
+                    </a>
+                  </li>
+                  <li class="nav-item">
                     <a
                       href="./estadisticas.html"
-                      class="links-sub-menu dropdown-item"
+                      class="links-menu nav-link dropdown-toggle dropdown-toggle"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
                     >
-                      <i class="fa-solid fa-people-roof"></i> Clubes
+                      <i class="fa-solid fa-chart-line"></i>Estadisticas
                     </a>
+                    <ul class="sub-menu dropdown-menu">
+                      <li>
+                        <a
+                          href="./estadisticas.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                        <i class="fa-solid fa-chart-line"></i> ir a Estadisticas
+                        </a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a
+                          href="./estadisticas.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                        <i class="fa-solid fa-people-roof"></i> Clubes
+                        </a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a
+                          href="./estadisticas.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                        <i class="fa-solid fa-font-awesome"></i>Seleccion
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a
-                      href="./estadisticas.html"
-                      class="links-sub-menu dropdown-item"
-                    >
-                      <i class="fa-solid fa-font-awesome"></i> Seleccion
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn ">
-                  <i class="fa-solid fa-trophy"></i>
-                  <a href="./palmares.html" class="links-menu">
-                    Palmares
-                  </a>
-                </button>
-                <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="sub-menu dropdown-menu">
-                  <li>
-                    <a
-                      href="./palmares.html"
-                      class="links-sub-menu dropdown-item"
-                    >
-                      <i class="fa-solid fa-people-roof"></i> Clubes
-                    </a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a
-                      href="./palmares.html"
-                      class="links-sub-menu dropdown-item"
-                    >
-                      <i class="fa-solid fa-font-awesome"></i> Seleccion
-                    </a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
+                  <li class="nav-item">
                     <a
                       href="./palmares.html"
-                      class="links-sub-menu dropdown-item"
+                      class="links-menu nav-link dropdown-toggle"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
                     >
-                      <i class="fa-solid fa-user"></i> Individuales
+                      <i class="fa-solid fa-trophy"></i>Palmares
                     </a>
+                    <ul class="sub-menu dropdown-menu">
+                      <li>
+                        <a
+                          href="./estadisticas.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                        <i class="fa-solid fa-trophy"></i> ir a Palmares
+                        </a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a
+                          href="./palmares.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                        <i class="fa-solid fa-people-roof"></i> Clubes
+                        </a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a
+                          href="./palmares.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                        <i class="fa-solid fa-font-awesome"></i>Seleccion
+                        </a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a
+                          href="./pages/palmares.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                        <i class="fa-solid fa-user"></i>Individuales
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn ">
-                  <i class="fa-solid fa-camera-retro"></i>
-                  <a href="./galeria.html" class="links-menu">
-                    Galeria
-                  </a>
-                </button>
-                <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="sub-menu dropdown-menu">
-                  <li>
+                  <li class="nav-item">
                     <a
-                      href="./galeria.html"
-                      class="links-sub-menu dropdown-item"
+                      href=""
+                      class="links-menu nav-link dropdown-toggle"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
                     >
-                      <i class="fa-solid fa-image"></i> Imagenes
+                      <i class="fa-solid fa-camera-retro"></i> Galeria
                     </a>
+                    <ul class="sub-menu dropdown-menu">
+                      <li>
+                        <a
+                          href="./galeria.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                        <i class="fa-solid fa-camera-retro"></i> ir a Galeria
+                        </a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a
+                          href="./galeria.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                          <i class="fa-solid fa-image"></i> Imagenes
+                        </a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a
+                          href="./galeria.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                          <i class="fa-solid fa-video"></i> Videos
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a
-                      href="./galeria.html"
-                      class="links-sub-menu dropdown-item"
-                    >
-                      <i class="fa-solid fa-video"></i> Videos
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn ">
-                  <i class="fa-solid fa-plus"></i>
-                  <a href="./formulario.html" class="links-menu">
-                    Mas
-                  </a>
-                </button>
-                <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                
-                <ul class="sub-menu dropdown-menu">
-                  <li>
+                  <li class="nav-item">
                     <a
                       href="./formulario.html"
-                      class="links-sub-menu dropdown-item"
+                      class="links-menu nav-link dropdown-toggle"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
                     >
-                      <i class="fa-solid fa-comments"></i> Formulario
+                      <i class="fa-solid fa-plus"></i> Mas
                     </a>
+                    <ul class="sub-menu dropdown-menu">
+                      <li>
+                        <a
+                          href="./formulario.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                          <i class="fa-solid fa-comments"></i> Formulario
+                        </a>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
-              </li>
-            </ul>
-            <footer class="conteiner-redes">
-              <a href="https://www.facebook.com/Iker.Casillas" class="redes">
-                <i class="fa-brands fa-facebook-f"> </i>
-              </a>
-              <a href="https://www.instagram.com/ikercasillas/" class="redes">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="https://x.com/IkerCasillas" class="redes">
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-            </footer>
-          </section>
+                
+              </section>
+              <footer class="conteiner-redes">
+                <a href="https://www.facebook.com/Iker.Casillas" class="redes">
+                  <i class="fa-brands fa-facebook-f"> </i>
+                </a>
+                <a href="https://www.instagram.com/ikercasillas/" class="redes ">
+                  <i class="fa-brands fa-instagram ig"></i>
+                </a>
+                <a href="https://x.com/IkerCasillas" class="redes ">
+                  <i class="fa-brands fa-x-twitter twi"></i>
+                </a>
+              </footer>
         </nav>
       </header>
 
@@ -240,7 +275,7 @@
           </article>
 
           <section class="conteiner-sec">
-            <article class="conteiner-tarjeta">
+            <article class="conteiner-tarjeta " data-aos="fade-up">
               <article class="conteiner-titulo-tarjeta">
                 <h3 class="titulo-tarjeta">3X CAMPEÓN UEFA Champions League</h3>
               </article>
@@ -251,31 +286,13 @@
                 </div>
 
                 <p class="info-copa">
-                  13/14
-                  <img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF Real Madrid CF <br />
-                  01/02
-                  <img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF Real Madrid CF <br />
-                  99/00
-                  <img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF Real Madrid CF
+                  13/14 Real Madrid CF  <br />
+                  01/02 Real Madrid CF  <br />
+                  99/00 Real Madrid CF 
                 </p>
               </section>
             </article>
-            <article class="conteiner-tarjeta">
+            <article class="conteiner-tarjeta" data-aos="fade-up">
               <article class="conteiner-titulo-tarjeta">
                 <h3 class="titulo-tarjeta">5X CAMPÉON DE ESPAÑA</h3>
               </article>
@@ -290,40 +307,15 @@
                 </div>
 
                 <p class="info-copa">
-                  11/12<img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF Real Madrid CF<br />
-                  07/08<img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF Real Madrid CF<br />
-                  06/07<img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF Real Madrid CF<br />
-                  02/03<img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF Real Madrid CF<br />
-                  00/01<img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF Real Madrid CF
+                  11/12 Real Madrid CF <br />
+                  07/08 Real Madrid CF <br />
+                  06/07 Real Madrid CF <br />
+                  02/03 Real Madrid CF <br />
+                  00/01 Real Madrid CF 
                 </p>
               </section>
             </article>
-            <article class="conteiner-tarjeta">
+            <article class="conteiner-tarjeta" data-aos="fade-up">
               <article class="conteiner-titulo-tarjeta">
                 <h3 class="titulo-tarjeta">1X CAMPEÓN DEL MUNDIAL DE CLUBES</h3>
               </article>
@@ -338,12 +330,7 @@
                 </div>
 
                 <p class="info-copa">
-                  2015<img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF Real Madrid CF
+                  2015 Real Madrid CF 
                 </p>
               </section>
             </article>
@@ -364,18 +351,8 @@
                 </div>
 
                 <p class="info-copa">
-                  14/15<img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF Real Madrid CF <br />
-                  02/03<img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF Real Madrid CF
+                  14/15 Real Madrid CF  <br />
+                  02/03 Real Madrid CF 
                 </p>
               </section>
             </article>
@@ -394,18 +371,8 @@
                 </div>
 
                 <p class="info-copa">
-                  13/14<img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF Real Madrid CF <br />
-                  10/11<img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF Real Madrid CF
+                  13/14 Real Madrid CF  <br />
+                  10/11 Real Madrid CF 
                 </p>
               </section>
             </article>
@@ -426,30 +393,10 @@
                 </div>
 
                 <p class="info-copa">
-                  12/13<img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF Real Madrid CF <br />
-                  08/09<img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF Real Madrid CF <br />
-                  03/04<img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF Real Madrid CF <br />
-                  01/02<img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF Real Madrid CF
+                  12/13 Real Madrid CF  <br />
+                  08/09 Real Madrid CF  <br />
+                  03/04 Real Madrid CF  <br />
+                  01/02 Real Madrid CF 
                 </p>
               </section>
             </article>
@@ -470,13 +417,7 @@
                 </div>
 
                 <p class="info-copa">
-                  2003
-                  <img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF Real Madrid CF
+                  2003 Real Madrid CF 
                 </p>
               </section>
             </article>
@@ -495,13 +436,7 @@
                 </div>
 
                 <p class="info-copa">
-                  17/18
-                  <img
-                    class="icono"
-                    src="https://www.bing.com/images/blob?bcid=TmbxMUzVDkQHqxcxoNWLuD9SqbotqVTdPzw"
-                    alt=""
-                  />
-                  FC Oporto FC Oporto
+                  17/18 FC Oporto 
                 </p>
               </section>
             </article>
@@ -522,18 +457,8 @@
                 </div>
 
                 <p class="info-copa">
-                  2019<img
-                    class="icono"
-                    src="https://www.bing.com/images/blob?bcid=TmbxMUzVDkQHqxcxoNWLuD9SqbotqVTdPzw"
-                    alt=""
-                  />
-                  FC Oporto FC Oporto <br />
-                  2018<img
-                    class="icono"
-                    src="https://www.bing.com/images/blob?bcid=TmbxMUzVDkQHqxcxoNWLuD9SqbotqVTdPzw"
-                    alt=""
-                  />
-                  FC Oporto FC Oporto
+                  2019 FC Oporto  <br />
+                  2018 FC Oporto 
                 </p>
               </section>
             </article>
@@ -559,12 +484,7 @@
                   </div>
 
                   <p class="info-copa">
-                    2010
-                    <img
-                      src="https://tmssl.akamaized.net/images/flagge/tiny/157.png?lm=1520611569"
-                      alt=""
-                    />
-                    España
+                    2010 España
                   </p>
                 </section>
               </article>
@@ -583,16 +503,8 @@
                   </div>
 
                   <p class="info-copa">
-                    2012<img
-                      src="https://tmssl.akamaized.net/images/flagge/tiny/157.png?lm=1520611569"
-                      alt=""
-                    />
-                    España<br />
-                    2008<img
-                      src="https://tmssl.akamaized.net/images/flagge/tiny/157.png?lm=1520611569"
-                      alt=""
-                    />
-                    España
+                    2012 España<br />
+                    2008 España
                   </p>
                 </section>
               </article>
@@ -611,11 +523,7 @@
                   </div>
 
                   <p class="info-copa">
-                    1999<img
-                      src="https://tmssl.akamaized.net/images/flagge/tiny/157.png?lm=1520611569"
-                      alt=""
-                    />
-                    España Sub-20
+                    1999 España Sub-20
                   </p>
                 </section>
               </article>
@@ -634,11 +542,7 @@
                   </div>
 
                   <p class="info-copa">
-                    1997<img
-                      src="https://tmssl.akamaized.net/images/flagge/tiny/157.png?lm=1520611569"
-                      alt=""
-                    />
-                    España Sub-16 España Sub-16
+                    1997 España Sub-16 
                   </p>
                 </section>
               </article>
@@ -664,18 +568,8 @@
                 </div>
 
                 <p class="info-copa">
-                  18/19<img
-                    class="icono"
-                    src="https://www.bing.com/images/blob?bcid=TmbxMUzVDkQHqxcxoNWLuD9SqbotqVTdPzw"
-                    alt=""
-                  />
-                  FC Oporto FC Oporto <br />
-                  07/08<img
-                    class="icono"
-                    src="../assets/images/real-tarjeta.png"
-                    alt=""
-                  />
-                  Real Madrid CF
+                  18/19 FC Oporto FC Oporto <br />
+                  07/08 Real Madrid CF
                 </p>
               </section>
             </article>
@@ -771,64 +665,59 @@
         </section>
       </main>
       <!-- pie de pagina -->
-      <footer class="conteiner-footer-principal">
-        <nav class="nav-footer">
-          <article class="conteiner-links-footer">
-            <figure>
-              <a href="">
-                <img src="../assets/images/iker-removebg-preview.png" alt="logo">
-              </a>
-            </figure>
-            <h3>navegacion</h3>
-            <ul class="menu-footer">
-              <li class="nav-item mb-2">
-                <a href="../index.html" class="links-footer nav-link p-0 text-secondary">
-                    Home
-                </a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="./trayectoria.html" class="links-footer nav-link p-0 text-secondary">
-                    Trayectoria
-                </a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="./estadisticas.html" class="links-footer nav-link p-0 text-secondary">
-                    Estadisticas
-                </a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="./palmares.html" class="links-footer nav-link p-0 text-secondary">
-                    Palmares
-                </a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="./galeria.html " class="links-footer nav-link p-0 text-secondary">
-                    Galeria
-                </a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="./formulario.html" class="links-footer nav-link p-0 text-secondary">
-                    Mas
-                </a>
-              </li>
-            </ul>
-          </article>
-          <article class="conteiner-redes-footer">
-            <h4>Redes</h4>
-            <a href="https://www.facebook.com/Iker.Casillas" class="redes">
-              <i class="fa-brands fa-facebook-f"> </i>
-            </a>
-            <a href="https://www.instagram.com/ikercasillas/" class="redes">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://x.com/IkerCasillas" class="redes">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-          </article>
-        </nav>
-        <article class="info-footer">
-            <p>trabajo final <a href="">ACUÑA GUILLERMO</a></p>
-        </article>
+      <footer class="footer conteiner-footer-principal">
+        <section class="container">
+            <article class="row">
+                <!-- Logo -->
+                <div class="col-md-3 text-center text-md-start mb-3 mb-md-0">
+                    <img src="../assets/images/iker-removebg-preview.png" alt="Logo" class="footer-logo">
+                </div>
+                <!-- Navegación -->
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h6>Navegacion</h6>
+                    <ul class="list-unstyled menu-footer">
+                        <li class="nav-item mb-2">
+                          <a href="#home-desk" class="nav-link p-0 text-secondary">Home</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a href="./pages/trayectoria.html" class="nav-link p-0 text-secondary" >Trayectoria</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a href="./pages/estadisticas.html" class="nav-link p-0 text-secondary">Estadisticas</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a href="./pages/palmares.html" class="nav-link p-0 text-secondary">Palmares</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a href="./pages/galeria.html" class="nav-link p-0 text-secondary">Galeria</a>
+                        </li>
+                        <li  class="nav-item mb-2">
+                          <a href="./pages/formulario.html" class="nav-link p-0 text-secondary">Formulario</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Redes Sociales -->
+                <div class="col-md-3 text-center text-md-end">
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank" title="Facebook" >
+                            <i class="fab fa-facebook-f Facebook"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" title="Twitter" >
+                            <i class="fab fa-twitter Twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram Instagram"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </article>
+            <div class="row mt-3 ">
+                <div class="col-12 text-center info ">
+                    <p>&COPY; Todos los derechos  <a href="https://www.linkedin.com/in/guillermo-cesar-acu%C3%B1a-b04274295/">Acuna Guillermo</a></p>
+                </div>
+            </div>
+        </section>
       </footer>
     </section>
     <script

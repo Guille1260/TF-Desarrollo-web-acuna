@@ -1,9 +1,10 @@
 //tarjetas de imagenes, seccion imagenes pagina galeria
 .tarjeta
     width: 100%
-    height: 500px
-    margin-top: 15px
+    height: 400px
     position: relative
+    @media screen and (min-width:2500px)
+        height: 1200px
     img
         height: 100%
         width: 100%
@@ -16,7 +17,7 @@
         backface-visibility: hidden
         overflow: hidden
         transition: .5s
-        border: 10px solid $color-amarillo
+        border: 10px solid #BDE038
     &:hover .font
         transform: perspective(600px) rotateY(180deg)
     &:hover .back

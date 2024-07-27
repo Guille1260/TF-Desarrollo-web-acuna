@@ -8,8 +8,18 @@
         //escudo del header
         .logo
             @include tam-logo
+            background: $color-amarillo
+            border-radius: 25% 10%
             &:hover
                 opacity: 0.8
         //nombre 
         .nombre
-            display: none
+            color: $color-amarillo
+            font-family: $tiitulo-header
+            font-weight: $tiitulo-header-weight
+            font-style: $tiitulo-header-stylo
+            text-transform: uppercase
+            margin-left: 30px
+            font-size: 45px
+            @media screen and (max-width: 480px) 
+                display: none

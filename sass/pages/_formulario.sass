@@ -1,30 +1,60 @@
 #formulario-page
     display: grid
+    
+    background: #9FC131
     row-gap: 20px
     grid-template-columns: 1fr
     grid-template-rows: auto auto 
-    grid-template-areas: "introduccion" "contenido-formulario" 
+    grid-template-areas: "introduccion" "contenido-formulario"
+    @media screen and (min-width:768px)
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: auto auto 
+        grid-template-areas: "introduccion contenido-formulario"
     .conteiner-descripcion-formulario
+        border: 1px solid black
         grid-area: introduccion
         display: grid
         grid-template-columns: 1fr
         grid-template-rows: auto auto 
         grid-template-areas: "tituloxx" "intro"
+        background: #D6D58E
+        font-family: $tra-des-family
         .conteiner-titulo-des
             grid-area: tituloxx
+            margin: 20px
             h1
+                @include animacion-home
                 text-align: center
+                text-transform: uppercase
+                @media screen and (max-width:320px)
+                    font-size: 20px
         .formu-des
             grid-area: intro
+            margin: 20px
+            @media screen and (min-width:768px)
+                margin-top: -140px
             p
                 text-align: center
                 margin: 5px 
+
     .conteiner-formulario
+        border: 1px solid black
         grid-area: contenido-formulario
         text-align: center
+        background: #D6D58E
+        font-family: $tra-des-family
         .formulario
+            border: 1px solid black
             display: grid
             grid-template-columns: 1fr
             grid-template-rows: repeat(5,auto)
             row-gap: 20px
-            
+            justify-items: center
+            margin: 10px
+            legend
+                margin-top: 10px
+                text-transform: uppercase
+            .divisor
+                width: 300px
+            textarea
+                width: 350px

@@ -10,20 +10,20 @@
     grid-template-areas: "encabezado" "contenido" "pie"
     .conteiner-header
         grid-area: encabezado
+        background: #012030
+    #Home-desk
+        background-image: url("../assets/images/fondo-home.png")
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        background-attachment: fixed
+        backdrop-filter: blur(200px)
+        -webkit-backdrop-filter: blur(20px)
     .principal
         grid-area: contenido
+
     .conteiner-footer-principal
         grid-area: pie
-        background: black
-// divido en 3 el menu desplegable
-.conteiner-menu
-    display: grid
-    grid-template-columns: 1fr
-    grid-template-rows: 100px auto 40px
-    grid-template-areas: "encabezado-des" "contenido-des" "pie-des"
-    .conteiner-nombre-logo-desplegado
-        grid-area: encabezado-des
-    .conteiner-cuerpo-menu
-        grid-area: contenido-des
-    .conteiner-redes
-        grid-area: pie-des   
+    
+        
+  

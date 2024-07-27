@@ -29,21 +29,17 @@
   </head>
   <body>
     <section class="seccion">
-      <header
-        class="conteiner-header navbar fixed-top container-fluid">
+      <header class="conteiner-header navbar fixed-top container-fluid"  >
         <section class="conteiner-logo-nombre">
-          <a
-            href=""
-            class="animate__bounceIn animate__lightSpeedInLeft"
-            title="ir a Home" >
-            <img src="./assets/images/Logo.png" alt="LOGO" class="logo" />
+          <a href="" class="animate__bounceIn animate__lightSpeedInLeft" title="ir a Home" >
+            <img src="../assets/images/Logo.png" alt="LOGO" class="logo" />
           </a>
           <h2 class="nombre animate__bounceIn animate__lightSpeedInLeft">
             iker casillas
           </h2>
         </section>
         <button
-          class="btn btn-menu"
+          class="btn-menu btn"
           title="abrir menu"
           type="button"
           data-bs-toggle="offcanvas"
@@ -53,180 +49,219 @@
           <span class="navbar-toggler-icon" title="Abri Menu"></span>
         </button>
         <nav
-          class="conteiner-menu offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel" >
-          <section class="conteiner-nombre-logo-desplegado ">
-            <a href="../index.html" title="ir a Home">
-              <img src="../assets/images/Logo.png" alt="LOGO" class="logo-des" />
-            </a>
-
-            <h5 class="titulo-des" id="offcanvasNavbarLabel">MENU</h5>
-            <button
-              type="button"
-              data-bs-dismiss="offcanvas"
-              class="btn-close"
-              aria-label="Close" >
-            </button>
-          </section>
-          <section class="conteiner-cuerpo-menu">
-            <ul class="menu navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a
-                  href="../index.html"
-                  class="links-menu nav-link marca"
-                  aria-current="page" >
-                  <i class="fa-solid fa-house"> </i> Home
+              class="conteiner-menu offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <section class="conteiner-nombre-logo-desplegado offcanvas-header">
+                <a href="../index.html" title="ir a Home">
+                  <img
+                    src="../assets/images/Logo.png"
+                    alt="LOGO"
+                    class="logo-des"
+                  />
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="./trayectoria.html" class="links-menu nav-link">
-                  <i class="fa-solid fa-route"></i>Trayectoria
-                </a>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn ">
-                  <i class="fa-solid fa-chart-line"></i>
-                  <a href="../index.html" class="links-menu ">
-                    Estadisticas
-                  </a>
-                </button>
-                <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="sub-menu dropdown-menu">
-                  <li>
+    
+                <h5 class="titulo-des" id="offcanvasNavbarLabel">MENU</h5>
+                <button
+                  type="button"
+                  data-bs-dismiss="offcanvas"
+                  class="btn-close"
+                  aria-label="Close"
+                ></button>
+              </section>
+              <section class="conteiner-cuerpo-menu">
+                <ul class="menu navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a
+                      href="../index.html"
+                      class="links-menu nav-link marca"
+                      aria-current="page"
+                    >
+                      <i class="fa-solid fa-house"> </i> Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./trayectoria.html" class="links-menu nav-link">
+                      <i class="fa-solid fa-route"></i>Trayectoria
+                    </a>
+                  </li>
+                  <li class="nav-item">
                     <a
                       href="./estadisticas.html"
-                      class="links-sub-menu dropdown-item"
+                      class="links-menu nav-link dropdown-toggle dropdown-toggle"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
                     >
-                      <i class="fa-solid fa-people-roof"></i> Clubes
+                      <i class="fa-solid fa-chart-line"></i>Estadisticas
                     </a>
+                    <ul class="sub-menu dropdown-menu">
+                      <li>
+                        <a
+                          href="./estadisticas.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                        <i class="fa-solid fa-chart-line"></i> ir a Estadisticas
+                        </a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a
+                          href="./estadisticas.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                        <i class="fa-solid fa-people-roof"></i> Clubes
+                        </a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a
+                          href="./estadisticas.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                        <i class="fa-solid fa-font-awesome"></i>Seleccion
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a
-                      href="./estadisticas.html"
-                      class="links-sub-menu dropdown-item"
-                    >
-                      <i class="fa-solid fa-font-awesome"></i> Seleccion
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn ">
-                  <i class="fa-solid fa-trophy"></i>
-                  <a href="./palmares.html" class="links-menu">
-                    Palmares
-                  </a>
-                </button>
-                <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="sub-menu dropdown-menu">
-                  <li>
-                    <a
-                      href="./palmares.html"
-                      class="links-sub-menu dropdown-item"
-                    >
-                      <i class="fa-solid fa-people-roof"></i> Clubes
-                    </a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a
-                      href="./palmares.html"
-                      class="links-sub-menu dropdown-item"
-                    >
-                      <i class="fa-solid fa-font-awesome"></i> Seleccion
-                    </a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
+                  <li class="nav-item">
                     <a
                       href="./palmares.html"
-                      class="links-sub-menu dropdown-item"
+                      class="links-menu nav-link dropdown-toggle"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
                     >
-                      <i class="fa-solid fa-user"></i> Individuales
+                      <i class="fa-solid fa-trophy"></i>Palmares
                     </a>
+                    <ul class="sub-menu dropdown-menu">
+                      <li>
+                        <a
+                          href="./estadisticas.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                        <i class="fa-solid fa-trophy"></i> ir a Palmares
+                        </a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a
+                          href="./palmares.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                        <i class="fa-solid fa-people-roof"></i> Clubes
+                        </a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a
+                          href="./palmares.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                        <i class="fa-solid fa-font-awesome"></i>Seleccion
+                        </a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a
+                          href="./pages/palmares.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                        <i class="fa-solid fa-user"></i>Individuales
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn ">
-                  <i class="fa-solid fa-camera-retro"></i>
-                  <a href="./galeria.html" class="links-menu">
-                    Galeria
-                  </a>
-                </button>
-                <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="sub-menu dropdown-menu">
-                  <li>
+                  <li class="nav-item">
                     <a
-                      href="./galeria.html"
-                      class="links-sub-menu dropdown-item"
+                      href=""
+                      class="links-menu nav-link dropdown-toggle"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
                     >
-                      <i class="fa-solid fa-image"></i> Imagenes
+                      <i class="fa-solid fa-camera-retro"></i> Galeria
                     </a>
+                    <ul class="sub-menu dropdown-menu">
+                      <li>
+                        <a
+                          href="./galeria.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                        <i class="fa-solid fa-camera-retro"></i> ir a Galeria
+                        </a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a
+                          href="./galeria.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                          <i class="fa-solid fa-image"></i> Imagenes
+                        </a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a
+                          href="./galeria.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                          <i class="fa-solid fa-video"></i> Videos
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a
-                      href="./galeria.html"
-                      class="links-sub-menu dropdown-item"
-                    >
-                      <i class="fa-solid fa-video"></i> Videos
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn ">
-                  <i class="fa-solid fa-plus"></i>
-                  <a href="./formulario.html" class="links-menu">
-                    Mas
-                  </a>
-                </button>
-                <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                
-                <ul class="sub-menu dropdown-menu">
-                  <li>
+                  <li class="nav-item">
                     <a
                       href="./formulario.html"
-                      class="links-sub-menu dropdown-item"
+                      class="links-menu nav-link dropdown-toggle"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
                     >
-                      <i class="fa-solid fa-comments"></i> Formulario
+                      <i class="fa-solid fa-plus"></i> Mas
                     </a>
+                    <ul class="sub-menu dropdown-menu">
+                      <li>
+                        <a
+                          href="./formulario.html"
+                          class="links-sub-menu dropdown-item"
+                        >
+                          <i class="fa-solid fa-comments"></i> Formulario
+                        </a>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
-              </li>
-            </ul>
-            <footer class="conteiner-redes">
-              <a href="https://www.facebook.com/Iker.Casillas" class="redes">
-                <i class="fa-brands fa-facebook-f"> </i>
-              </a>
-              <a href="https://www.instagram.com/ikercasillas/" class="redes">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="https://x.com/IkerCasillas" class="redes">
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-            </footer>
-          </section>
+                
+              </section>
+              <footer class="conteiner-redes">
+                <a href="https://www.facebook.com/Iker.Casillas" class="redes">
+                  <i class="fa-brands fa-facebook-f"> </i>
+                </a>
+                <a href="https://www.instagram.com/ikercasillas/" class="redes ">
+                  <i class="fa-brands fa-instagram ig"></i>
+                </a>
+                <a href="https://x.com/IkerCasillas" class="redes ">
+                  <i class="fa-brands fa-x-twitter twi"></i>
+                </a>
+              </footer>
         </nav>
       </header>
       <main class="principal" id="formulario-page">
@@ -236,15 +271,16 @@
           </article>
           <article class="formu-des">
             <p>
-              te invito a dejar un comentario hacerca de esta pagina web, sobre
-              como puede mejorar
+              !Hola¡ Gracias por tomarte el tiempo de visitar mi primer sitio web. <br> 
+              Espero que hayas tenido una gran experiencia y me encantaría saber qué opinas al respecto sobre como podria mejorar. <br>
+                  ¡Gracias  por tu tiempo!
             </p>
           </article>
         </section>
         <section class="conteiner-formulario">
           <form class="formulario">
             <legend>formulario</legend>
-            <div class="input-group mb-3">
+            <div class="input-group mb-2 divisor" >
               <span class="input-group-text">
                 <i class="fa-solid fa-user"></i>
               </span>
@@ -257,7 +293,7 @@
                 <label for="floatingInputGroup1">nombre/alias</label>
               </div>
             </div>
-            <div class="input-group has-validation conte">
+            <div class="input-group has-validation  divisor">
               <span class="input-group-text">
                 <i class="fa-solid fa-envelope"></i>
               </span>
@@ -282,75 +318,69 @@
               </textarea>
               <label for="floatingTextarea2">Comentario</label>
             </div>
-
               <button
                 type="button"
                 class=" btn-enviar"
                 >
                 enviar
               </button>
-            </form>
+          </form>
         </section>
       </main>
       <!-- pie de pagina -->
-      <footer class="conteiner-footer-principal">
-        <nav class="nav-footer">
-          <article class="conteiner-links-footer">
-            <figure>
-              <a href="">
-                <img src="../assets/images/iker-removebg-preview.png" alt="logo">
-              </a>
-            </figure>
-            <h3>navegacion</h3>
-            <ul class="menu-footer">
-              <li class="nav-item mb-2">
-                <a href="../index.html" class="links-footer nav-link p-0 text-secondary">
-                    Home
-                </a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="./trayectoria.html" class="links-footer nav-link p-0 text-secondary">
-                    Trayectoria
-                </a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="./estadisticas.html" class="links-footer nav-link p-0 text-secondary">
-                    Estadisticas
-                </a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="./palmares.html" class="links-footer nav-link p-0 text-secondary">
-                    Palmares
-                </a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="./galeria.html " class="links-footer nav-link p-0 text-secondary">
-                    Galeria
-                </a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="./formulario.html" class="links-footer nav-link p-0 text-secondary">
-                    Mas
-                </a>
-              </li>
-            </ul>
-          </article>
-          <article class="conteiner-redes-footer">
-            <h4>Redes</h4>
-            <a href="https://www.facebook.com/Iker.Casillas" class="redes">
-              <i class="fa-brands fa-facebook-f"> </i>
-            </a>
-            <a href="https://www.instagram.com/ikercasillas/" class="redes">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://x.com/IkerCasillas" class="redes">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-          </article>
-        </nav>
-        <article class="info-footer">
-            <p>trabajo final <a href="">ACUÑA GUILLERMO</a></p>
-        </article>
+      <footer class="footer conteiner-footer-principal">
+        <section class="container">
+            <article class="row">
+                <!-- Logo -->
+                <div class="col-md-3 text-center text-md-start mb-3 mb-md-0">
+                    <img src="../assets/images/iker-removebg-preview.png" alt="Logo" class="footer-logo">
+                </div>
+                <!-- Navegación -->
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h6>Navegacion</h6>
+                    <ul class="list-unstyled menu-footer">
+                        <li class="nav-item mb-2">
+                          <a href="#home-desk" class="nav-link p-0 text-secondary">Home</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a href="./pages/trayectoria.html" class="nav-link p-0 text-secondary" >Trayectoria</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a href="./pages/estadisticas.html" class="nav-link p-0 text-secondary">Estadisticas</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a href="./pages/palmares.html" class="nav-link p-0 text-secondary">Palmares</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a href="./pages/galeria.html" class="nav-link p-0 text-secondary">Galeria</a>
+                        </li>
+                        <li  class="nav-item mb-2">
+                          <a href="./pages/formulario.html" class="nav-link p-0 text-secondary">Formulario</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Redes Sociales -->
+                <div class="col-md-3 text-center text-md-end">
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank" title="Facebook" >
+                            <i class="fab fa-facebook-f Facebook"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" title="Twitter" >
+                            <i class="fab fa-twitter Twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram Instagram"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </article>
+            <div class="row mt-3 ">
+                <div class="col-12 text-center info ">
+                    <p>&COPY; Todos los derechos  <a href="https://www.linkedin.com/in/guillermo-cesar-acu%C3%B1a-b04274295/">Acuna Guillermo</a></p>
+                </div>
+            </div>
+        </section>
       </footer>
     </section>
 

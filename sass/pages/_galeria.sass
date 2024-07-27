@@ -1,39 +1,19 @@
 #galeria
     display: grid
-    display: grid
     grid-template-columns: 1fr
     grid-template-rows: 70px auto auto 
     grid-template-areas: "titulo-galeria" "contenido-1-galeria" "contenido-2-galeria"
     .conteiner-titulo-galeria
         grid-area: titulo-galeria
-        
-    .seccion-Imagenesnes
+        background: $color-subtitulos
+        @include titulos
+    .seccion-Imagenes
         grid-area: contenido-1-galeria
-        display: grid
-        grid-template-columns: 1fr
-        grid-template-rows: 70px auto
-        grid-template-areas: "t" "s"
-        .conteiner-subtitulo-galeria
-            grid-area: t
-        .seccion-tarjetas
-            grid-area: s
-            @include section-img
+        background: #D6D58E
+        @include galeria-seccion
     .seccion-videos
         grid-area: contenido-2-galeria
-        display: grid
-        grid-template-columns: 1fr
-        grid-template-rows: 70px auto
-        grid-template-areas: "te""se"
-        .conteiner-subtitulo-videos
-            grid-area: te
-            background: #063540
-            .titulo-video
-                font-size: 50px
-        .parte-videos
-            grid-area: se
-            display: grid
-            grid-template-columns: 1fr
-            grid-template-rows: auto
-            grid-gap: 10px
+        background: #D6D58E
+        @include galeria-seccion
         
     

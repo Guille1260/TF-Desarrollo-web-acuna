@@ -5,9 +5,12 @@
     grid-template-areas: "titulo-trayectoria" "contenido-trayectoria"
     .conteiner-titulo-tra
         grid-area: titulo-trayectoria
-        background: black
+        background: $color-subtitulos
+        @include titulos
         .titulo-trayectoria
             color: $color-amarillo
+            font-size: 30px
+            
 
     .conteiner-trayectoria-info
         grid-area: contenido-trayectoria 
@@ -34,3 +37,6 @@
             object-position: center
         .detalle-parrafo
             margin: 10px
+            max-width: 1000px
+            font-family: $tra-des-family
+        
