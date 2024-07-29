@@ -8,7 +8,7 @@
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 225, 225, 0))
     backdrop-filter: blur(20px)
     -webkit-backdrop-filter: blur(20px)
-
+//alinear titulos de las pages
 @mixin titulos
     text-align: center
     align-content: center
@@ -25,9 +25,13 @@
     .conteiner-titulo-det
         grid-area: sub-tit
         background: #D6D58E
+        font-family: $titulo-home
         border: 1px solid black
-        text-align: center
         color: #242912b6
+        @include titulos
+        h2
+            color: #042940
+            
     //descripcion
     .detalle-parrafo
         grid-area: det-p 
@@ -67,6 +71,10 @@
         grid-area: tit-niv
         background: #10454F
         @include titulos
+        h2
+            color: #9FC131
+            font-family: $titulo-home
+            text-transform: uppercase
     .conteiner-tabla
         grid-area: tab
 //page palmares
@@ -92,6 +100,10 @@
         grid-area: sub-titulo-sec
         background: #063540
         @include titulos
+        h2
+            color: #9FC131
+            font-family: $titulo-home
+            text-transform: uppercase
     .conteiner-sec
         grid-area: contemidox
         background: #9FC131
@@ -120,8 +132,12 @@
     grid-template-areas: "t" "s"
     .conteiner-subtitulo-galeria
         grid-area: t
-        background: #10454F
+        background: #063540
         @include titulos
+        h2
+            color: #9FC131
+            font-family: $titulo-home
+            text-transform: uppercase
     .seccion-tarjetas
         grid-area: s
         @include imagenes

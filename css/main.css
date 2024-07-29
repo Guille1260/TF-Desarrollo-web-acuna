@@ -59,11 +59,15 @@
 }
 
 .btn-enviar {
-  background: black;
+  background: #005C53;
+  text-transform: uppercase;
   color: #dbf227;
   width: 200px;
   margin: 20px;
   text-align: center;
+}
+.btn-enviar:hover {
+  color: #9FC131;
 }
 
 #home-fondo {
@@ -129,6 +133,9 @@
 }
 .conteiner-menu .conteiner-nombre-logo-desplegado .titulo-des {
   color: yellow;
+  font-size: 40px;
+  text-shadow: black 2px 2px;
+  font-family: "Edu AU VIC WA NT Hand";
 }
 
 .conteiner-cuerpo-menu {
@@ -142,7 +149,8 @@
   margin-left: 10px;
   padding: 5px;
   background: #014034;
-  font-family: "Seymour One", sans-serif;
+  font-family: "Edu AU VIC WA NT Hand";
+  text-transform: uppercase;
   font-size: 15px;
   color: #DBF227;
 }
@@ -182,14 +190,15 @@
 }
 .conteiner-cuerpo-menu .sub-menu .links-sub-menu {
   font-size: 10px;
-  font-family: "Seymour One", sans-serif;
+  font-family: "Edu AU VIC WA NT Hand";
+  text-transform: uppercase;
   color: #DBF227;
   text-align: center;
   background: #014034;
 }
 @media screen and (min-width: 1024px) {
   .conteiner-cuerpo-menu .sub-menu .links-sub-menu {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -206,6 +215,11 @@
   grid-area: titu-tarjeta;
   background: #A3AB78;
   border: 1px solid black;
+}
+.conteiner-tarjeta .conteiner-titulo-tarjeta h3 {
+  text-transform: uppercase;
+  font-family: "Edu AU VIC WA NT Hand";
+  color: #1F0802;
 }
 .conteiner-tarjeta .conteiner-image-info {
   border: 1px solid black;
@@ -231,6 +245,8 @@
   height: 100%;
   text-align: center;
   align-content: center;
+  font-family: "Edu AU VIC WA NT Hand";
+  text-transform: uppercase;
 }
 
 .tarjeta {
@@ -256,7 +272,7 @@
   backface-visibility: hidden;
   overflow: hidden;
   transition: 0.5s;
-  border: 10px solid #BDE038;
+  border: 10px solid #275950;
 }
 .tarjeta:hover .font {
   transform: perspective(600px) rotateY(180deg);
@@ -270,13 +286,28 @@
 }
 .tarjeta .back {
   transform: perspective(600px) rotateY(180deg);
-  background: rgb(3, 35, 34);
+  background: rgba(3, 35, 34, 0.815);
   padding: 10px;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+}
+.tarjeta .back h3 {
+  font-family: "Anton SC", sans-serif;
+  color: #DBF227;
+}
+.tarjeta .back p {
+  font-family: "Edu AU VIC WA NT Hand";
+  font-size: 25px;
+}
+.tarjeta .back p a {
+  text-decoration: none;
+  color: white;
+}
+.tarjeta .back p a:hover {
+  color: #DBF227;
 }
 
 .conteiner-footer-principal {
@@ -291,6 +322,8 @@
   font-size: 1.25rem;
   margin-bottom: 15px;
   color: #84B026;
+  font-family: "Edu AU VIC WA NT Hand";
+  text-transform: uppercase;
 }
 .conteiner-footer-principal .info {
   color: #84B026;
@@ -301,6 +334,19 @@
 }
 .conteiner-footer-principal .nav-link {
   font-size: 1rem;
+  font-family: "Edu AU VIC WA NT Hand";
+  text-transform: uppercase;
+  color: rgba(97, 97, 77, 0.8823529412);
+}
+.conteiner-footer-principal .nav-link:hover {
+  color: #DBF227;
+}
+.conteiner-footer-principal .info {
+  font-family: "Edu AU VIC WA NT Hand";
+  text-transform: uppercase;
+}
+.conteiner-footer-principal .info a {
+  color: #DBF227;
 }
 .conteiner-footer-principal .social-icons a {
   text-decoration: none;
@@ -321,7 +367,7 @@
 iframe {
   width: 100%;
   height: 480px;
-  border: 10px solid #BDE038;
+  border: 10px solid #275950;
 }
 @media screen and (min-width: 2500px) {
   iframe {
@@ -398,6 +444,11 @@ iframe {
   grid-area: contenido-home;
   z-index: 111;
 }
+@media screen and (min-width: 2500px) {
+  .principal .conteiner-descripcion {
+    margin-top: 50px;
+  }
+}
 .principal .conteiner-descripcion .detalles {
   font-size: 20px;
   margin: 10px;
@@ -419,6 +470,16 @@ iframe {
   background: #005C53;
   text-align: center;
   align-content: center;
+}
+#trayectoria .conteiner-titulo-tra h1 {
+  text-shadow: black 2px 2px;
+  font-family: "Seymour One", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  #trayectoria .conteiner-titulo-tra h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+  }
 }
 #trayectoria .conteiner-titulo-tra .titulo-trayectoria {
   color: #DBF227;
@@ -464,9 +525,14 @@ iframe {
 #trayectoria .conteiner-trayectoria-info .conteiner-detalles1 .detalle .conteiner-titulo-det {
   grid-area: sub-tit;
   background: #D6D58E;
+  font-family: "Seymour One", sans-serif;
   border: 1px solid black;
-  text-align: center;
   color: rgba(36, 41, 18, 0.7137254902);
+  text-align: center;
+  align-content: center;
+}
+#trayectoria .conteiner-trayectoria-info .conteiner-detalles1 .detalle .conteiner-titulo-det h2 {
+  color: #042940;
 }
 #trayectoria .conteiner-trayectoria-info .conteiner-detalles1 .detalle .detalle-parrafo {
   grid-area: det-p;
@@ -504,9 +570,14 @@ iframe {
 #trayectoria .conteiner-trayectoria-info .conteiner-detalles2 .detalle .conteiner-titulo-det {
   grid-area: sub-tit;
   background: #D6D58E;
+  font-family: "Seymour One", sans-serif;
   border: 1px solid black;
-  text-align: center;
   color: rgba(36, 41, 18, 0.7137254902);
+  text-align: center;
+  align-content: center;
+}
+#trayectoria .conteiner-trayectoria-info .conteiner-detalles2 .detalle .conteiner-titulo-det h2 {
+  color: #042940;
 }
 #trayectoria .conteiner-trayectoria-info .conteiner-detalles2 .detalle .detalle-parrafo {
   grid-area: det-p;
@@ -544,9 +615,14 @@ iframe {
 #trayectoria .conteiner-trayectoria-info .conteiner-detalles3 .detalle .conteiner-titulo-det {
   grid-area: sub-tit;
   background: #D6D58E;
+  font-family: "Seymour One", sans-serif;
   border: 1px solid black;
-  text-align: center;
   color: rgba(36, 41, 18, 0.7137254902);
+  text-align: center;
+  align-content: center;
+}
+#trayectoria .conteiner-trayectoria-info .conteiner-detalles3 .detalle .conteiner-titulo-det h2 {
+  color: #042940;
 }
 #trayectoria .conteiner-trayectoria-info .conteiner-detalles3 .detalle .detalle-parrafo {
   grid-area: det-p;
@@ -560,10 +636,11 @@ iframe {
 #trayectoria .conteiner-trayectoria-info .detalle-parrafo {
   margin: 10px;
   max-width: 1000px;
-  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-family: "Edu AU VIC WA NT Hand";
 }
 
 #estadisticas {
+  background: black;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 70px auto auto;
@@ -575,6 +652,17 @@ iframe {
   background: #005C53;
   text-align: center;
   align-content: center;
+}
+#estadisticas .conteiner-titulo-sec h1 {
+  color: #DBF227;
+  text-shadow: black 2px 2px;
+  font-family: "Seymour One", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  #estadisticas .conteiner-titulo-sec h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+  }
 }
 #estadisticas .Nivel-club {
   grid-area: contenido-1-estadistica;
@@ -588,6 +676,11 @@ iframe {
   background: #10454F;
   text-align: center;
   align-content: center;
+}
+#estadisticas .Nivel-club .conteiner-sub-titulo h2 {
+  color: #9FC131;
+  font-family: "Seymour One", sans-serif;
+  text-transform: uppercase;
 }
 #estadisticas .Nivel-club .conteiner-tabla {
   grid-area: tab;
@@ -605,8 +698,19 @@ iframe {
   text-align: center;
   align-content: center;
 }
+#estadisticas .Nivel-seleccion .conteiner-sub-titulo h2 {
+  color: #9FC131;
+  font-family: "Seymour One", sans-serif;
+  text-transform: uppercase;
+}
 #estadisticas .Nivel-seleccion .conteiner-tabla {
   grid-area: tab;
+}
+#estadisticas .Nivel-seleccion .conteiner-detalle {
+  background: #D6D58E;
+}
+#estadisticas .Nivel-seleccion summary {
+  text-transform: uppercase;
 }
 
 #palmares {
@@ -621,6 +725,17 @@ iframe {
   text-align: center;
   align-content: center;
 }
+#palmares .conteiner-titulo-pal h1 {
+  color: #DBF227;
+  text-shadow: black 2px 2px;
+  font-family: "Seymour One", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  #palmares .conteiner-titulo-pal h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+  }
+}
 #palmares .seccion-Nivel-1 {
   grid-area: contenido-1-palmares;
   display: grid;
@@ -633,6 +748,11 @@ iframe {
   background: #063540;
   text-align: center;
   align-content: center;
+}
+#palmares .seccion-Nivel-1 .conteiner-sub-titulo-pal h2 {
+  color: #9FC131;
+  font-family: "Seymour One", sans-serif;
+  text-transform: uppercase;
 }
 #palmares .seccion-Nivel-1 .conteiner-sec {
   grid-area: contemidox;
@@ -670,6 +790,11 @@ iframe {
   text-align: center;
   align-content: center;
 }
+#palmares .seccion-Nivel-2 .conteiner-sub-titulo-pal h2 {
+  color: #9FC131;
+  font-family: "Seymour One", sans-serif;
+  text-transform: uppercase;
+}
 #palmares .seccion-Nivel-2 .conteiner-sec {
   grid-area: contemidox;
   background: #9FC131;
@@ -705,6 +830,11 @@ iframe {
   background: #063540;
   text-align: center;
   align-content: center;
+}
+#palmares .seccion-Nivel-3 .conteiner-sub-titulo-pal h2 {
+  color: #9FC131;
+  font-family: "Seymour One", sans-serif;
+  text-transform: uppercase;
 }
 #palmares .seccion-Nivel-3 .conteiner-sec {
   grid-area: contemidox;
@@ -749,9 +879,20 @@ iframe {
   text-align: center;
   align-content: center;
 }
+#galeria .conteiner-titulo-galeria h1 {
+  color: #DBF227;
+  text-shadow: black 2px 2px;
+  font-family: "Seymour One", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  #galeria .conteiner-titulo-galeria h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+  }
+}
 #galeria .seccion-Imagenes {
   grid-area: contenido-1-galeria;
-  background: #D6D58E;
+  background: #506266;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 70px auto;
@@ -759,9 +900,14 @@ iframe {
 }
 #galeria .seccion-Imagenes .conteiner-subtitulo-galeria {
   grid-area: t;
-  background: #10454F;
+  background: #063540;
   text-align: center;
   align-content: center;
+}
+#galeria .seccion-Imagenes .conteiner-subtitulo-galeria h2 {
+  color: #9FC131;
+  font-family: "Seymour One", sans-serif;
+  text-transform: uppercase;
 }
 #galeria .seccion-Imagenes .seccion-tarjetas {
   grid-area: s;
@@ -787,7 +933,7 @@ iframe {
 }
 #galeria .seccion-videos {
   grid-area: contenido-2-galeria;
-  background: #D6D58E;
+  background: #506266;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 70px auto;
@@ -795,9 +941,14 @@ iframe {
 }
 #galeria .seccion-videos .conteiner-subtitulo-galeria {
   grid-area: t;
-  background: #10454F;
+  background: #063540;
   text-align: center;
   align-content: center;
+}
+#galeria .seccion-videos .conteiner-subtitulo-galeria h2 {
+  color: #9FC131;
+  font-family: "Seymour One", sans-serif;
+  text-transform: uppercase;
 }
 #galeria .seccion-videos .seccion-tarjetas {
   grid-area: s;
@@ -825,7 +976,6 @@ iframe {
 #formulario-page {
   display: grid;
   background: #9FC131;
-  row-gap: 20px;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "introduccion" "contenido-formulario";
@@ -837,6 +987,11 @@ iframe {
     grid-template-areas: "introduccion contenido-formulario";
   }
 }
+@media screen and (min-width: 1024px) {
+  #formulario-page {
+    height: 100vh;
+  }
+}
 #formulario-page .conteiner-descripcion-formulario {
   border: 1px solid black;
   grid-area: introduccion;
@@ -845,11 +1000,22 @@ iframe {
   grid-template-rows: auto auto;
   grid-template-areas: "tituloxx" "intro";
   background: #D6D58E;
-  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-family: "Edu AU VIC WA NT Hand";
+}
+@media screen and (min-width: 768px) {
+  #formulario-page .conteiner-descripcion-formulario {
+    margin: 50px;
+    margin-right: 0;
+  }
 }
 #formulario-page .conteiner-descripcion-formulario .conteiner-titulo-des {
   grid-area: tituloxx;
   margin: 20px;
+}
+@media screen and (min-width: 2500px) {
+  #formulario-page .conteiner-descripcion-formulario .conteiner-titulo-des {
+    margin-top: 100px;
+  }
 }
 #formulario-page .conteiner-descripcion-formulario .conteiner-titulo-des h1 {
   animation-duration: 2s;
@@ -875,16 +1041,33 @@ iframe {
 #formulario-page .conteiner-descripcion-formulario .formu-des p {
   text-align: center;
   margin: 5px;
+  font-family: "Edu AU VIC WA NT Hand";
+}
+@media screen and (min-width: 1024px) {
+  #formulario-page .conteiner-descripcion-formulario .formu-des p {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 2500px) {
+  #formulario-page .conteiner-descripcion-formulario .formu-des p {
+    font-size: 30px;
+  }
 }
 #formulario-page .conteiner-formulario {
   border: 1px solid black;
   grid-area: contenido-formulario;
   text-align: center;
   background: #D6D58E;
-  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-family: "Edu AU VIC WA NT Hand";
+}
+@media screen and (min-width: 768px) {
+  #formulario-page .conteiner-formulario {
+    margin: 50px;
+    margin-left: 0;
+  }
 }
 #formulario-page .conteiner-formulario .formulario {
-  border: 1px solid black;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
@@ -892,15 +1075,47 @@ iframe {
   justify-items: center;
   margin: 10px;
 }
+@media screen and (min-width: 1024px) {
+  #formulario-page .conteiner-formulario .formulario {
+    margin: 20px;
+  }
+}
+@media screen and (min-width: 2500px) {
+  #formulario-page .conteiner-formulario .formulario {
+    margin-top: 200px;
+  }
+}
 #formulario-page .conteiner-formulario .formulario legend {
   margin-top: 10px;
   text-transform: uppercase;
+  font-size: 25px;
+  font-family: "Edu AU VIC WA NT Hand";
 }
 #formulario-page .conteiner-formulario .formulario .divisor {
   width: 300px;
 }
+@media screen and (min-width: 2500px) {
+  #formulario-page .conteiner-formulario .formulario .divisor {
+    width: 600px;
+  }
+}
 #formulario-page .conteiner-formulario .formulario textarea {
-  width: 350px;
+  width: 290px;
+}
+@media screen and (min-width: 1024px) {
+  #formulario-page .conteiner-formulario .formulario textarea {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #formulario-page .conteiner-formulario .formulario textarea {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 2500px) {
+  #formulario-page .conteiner-formulario .formulario textarea {
+    width: 700px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {

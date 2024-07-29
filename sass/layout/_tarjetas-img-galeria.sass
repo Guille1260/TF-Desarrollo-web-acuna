@@ -17,7 +17,7 @@
         backface-visibility: hidden
         overflow: hidden
         transition: .5s
-        border: 10px solid #BDE038
+        border: 10px solid #275950
     &:hover .font
         transform: perspective(600px) rotateY(180deg)
     &:hover .back
@@ -28,11 +28,21 @@
     
     .back
         transform: perspective(600px) rotateY(180deg)
-        background: rgb(3, 35, 34)
+        background: rgba(3, 35, 34, 0.815)
         padding: 10px
         color: white
         display: flex
         flex-direction: column
         justify-content: space-between
         text-align: center
-    
+        h3
+            font-family: $tiitulo-header
+            color: $color-amarillo
+        p
+            font-family: $tra-des-family
+            font-size: 25px
+            a
+                text-decoration: none
+                color: white
+                &:hover
+                    color: $color-amarillo

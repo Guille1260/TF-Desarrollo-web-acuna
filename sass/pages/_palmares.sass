@@ -7,6 +7,13 @@
         grid-area: titulo-palmares
         background: $color-subtitulos
         @include titulos
+        h1
+            color: $color-amarillo
+            text-shadow: black 2px 2px
+            font-family: $titulo-home
+            @media screen and (min-width: 768px)
+                text-transform: uppercase
+                font-size: 35px
     .seccion-Nivel-1
         grid-area: contenido-1-palmares
         @include palmares-secciones
