@@ -12,7 +12,7 @@
     @media screen and (min-width:1024px)
         height: 100vh
     .conteiner-descripcion-formulario
-        border: 1px solid black
+        border-right:  1px solid black
         grid-area: introduccion
         display: grid
         grid-template-columns: 1fr
@@ -52,7 +52,7 @@
 
     .conteiner-formulario
         
-        border: 1px solid black
+        // border: 1px solid black
         grid-area: contenido-formulario
         text-align: center
         background: #D6D58E
@@ -83,11 +83,13 @@
                 @media screen and (min-width:2500px)
                     width: 600px
             textarea
-                // resize: none
+                // 
                 width:290px
+                resize: none
                 @media screen and (min-width:1024px)
                     width: 350px
                 @media screen and (min-width:1440px)
                     width: 450px
                 @media screen and (min-width:2500px)
                     width: 700px
+                // resize: none
