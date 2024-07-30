@@ -3,13 +3,17 @@
 
 <h2 > DESCIPCION</h2>
     <p>
-        Trabjo final del curoso de Desarrollo web, en Coderhouse 2024, comision:57655
+        Trabjo final del curoso de Desarrollo web
+        Coderhouse 2024 
+        comision:57655
     </p>
         
     
 
 <h2 > Estado del proyecto</h2>
-   ##Proyecto Terminado 
+   <p>
+        Proyecto Terminado
+    </p>
     
 
 
@@ -23,10 +27,15 @@ $ npm init
 ```
 
 <h2 > Estado del proyecto</h2>
-   *HTML
-   *CSS
-   *BOOSTRAP
-   *SASS
+   <p>
+        *HTML
+        *CSS
+        *BOOSTRAP
+        *SASS
+   </p>
+
 <h2 >Autor</h2>
-   ##Acuña Guillermo C. 
-# lincincia
+   Acuña Guillermo C. 
+
+
+<h2 > Licencia</h2>
