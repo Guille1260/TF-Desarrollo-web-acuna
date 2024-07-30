@@ -26,12 +26,12 @@ $ npm install
 $ npm init
 ```
 
-<h2 > Estado del proyecto</h2>
+<h2 > Herramientas Utilizasas</h2>
    <p>
-        * HTML
-        * CSS
-        * BOOSTRAP
-        * SASS
+        HTML
+        CSS
+        BOOSTRAP
+        SASS
    </p>
 
 <h2 >Autor</h2>
