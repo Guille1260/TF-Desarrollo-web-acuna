@@ -1,17 +1,16 @@
 
 <h1 > DESARROLLO WEB - IKER CASILLAS </h1>
-    ![Badge en Desarollo](https://img.shields.io/badge/VERSION-1.0-green)
 
-# Descripcion
+<h2 > DESCIPCION</h2>
     <p>
-        Trabjo final del curoso de Desarrollo web, en Coderhouse 2024, comision:57655    
+        Trabjo final del curoso de Desarrollo web, en Coderhouse 2024, comision:57655
     </p>
+        
+    
 
-
-# Estado del proyecto
-    <h4 >
-        Proyecto Terminado 
-    </h4>
+<h2 > Estado del proyecto</h2>
+   ##Proyecto Terminado 
+    
 
 
 # 🛠️ Abre y ejecuta el proyecto
@@ -23,15 +22,11 @@ $ npm install
 $ npm init
 ```
 
-# Tecnologias utilizadas
-    <p>
-        HTML
-        CSS
-        BOOSTRAP
-        SASS   
-    </p>
-# Autor
-    <h4 >
-        Acuña Guillermo Cesar
-    </h4>
+<h2 > Estado del proyecto</h2>
+   *HTML
+   *CSS
+   *BOOSTRAP
+   *SASS
+<h2 >Autor</h2>
+   ##Acuña Guillermo C. 
 # lincincia
